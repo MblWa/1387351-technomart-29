@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Дмитрий Козлов](https://up.htmlacademy.ru/htmlcss/29/user/1387351).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Солодухин](https://htmlacademy.ru/profile/nikolaysolodukhin).
 
 ---
 
