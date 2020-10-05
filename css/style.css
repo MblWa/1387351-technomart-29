@@ -6,7 +6,7 @@
   font-weight: 400;
   src: local('Cuprum Regular'), local('Cuprum-Regular'),
        url('../fonts/cuprum-v12-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/cuprum-v12-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/cuprum-v12-latin_cyrillic-regular.woff') format('woff'); /* Modern Browsers */
 }
 
 /* cuprum-italic - latin_cyrillic */
@@ -16,7 +16,7 @@
   font-weight: 400;
   src: local('Cuprum Italic'), local('Cuprum-Italic'),
        url('../fonts/cuprum-v12-latin_cyrillic-italic.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/cuprum-v12-latin_cyrillic-italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/cuprum-v12-latin_cyrillic-italic.woff') format('woff'); /* Modern Browsers */
 }
 
 /* cuprum-700 - latin_cyrillic */
@@ -26,7 +26,7 @@
   font-weight: 700;
   src: local('Cuprum Bold'), local('Cuprum-Bold'),
        url('../fonts/cuprum-v12-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/cuprum-v12-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/cuprum-v12-latin_cyrillic-700.woff') format('woff'); /* Modern Browsers */
 }
 
 /* cuprum-700italic - latin_cyrillic */
@@ -36,7 +36,7 @@
   font-weight: 700;
   src: local('Cuprum Bold Italic'), local('Cuprum-BoldItalic'),
        url('../fonts/cuprum-v12-latin_cyrillic-700italic.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/cuprum-v12-latin_cyrillic-700italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/cuprum-v12-latin_cyrillic-700italic.woff') format('woff'); /* Modern Browsers */
 }
 
 /* pt-sans-regular - latin_cyrillic */
@@ -46,7 +46,7 @@
   font-weight: 400;
   src: local('PT Sans'), local('PTSans-Regular'),
        url('../fonts/pt-sans-v12-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/pt-sans-v12-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/pt-sans-v12-latin_cyrillic-regular.woff') format('woff'); /* Modern Browsers */
 }
 
 /* pt-sans-700 - latin_cyrillic */
@@ -56,26 +56,67 @@
   font-weight: 700;
   src: local('PT Sans Bold'), local('PTSans-Bold'),
        url('../fonts/pt-sans-v12-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/pt-sans-v12-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/pt-sans-v12-latin_cyrillic-700.woff') format('woff'); /* Modern Browsers */
 }
 
-/* Variables */
+/* Color-system */
 
 :root {
-  --basic-red: #EE3643;
-  --basic-green: #63A63E;
-  --basic-grey: #3D546F;
-  --basic-greylight: #C5C5C5;
-  --basic-background: #F1F5F7;
+  /*background colors*/
+  --header-background: #293449;
+  --logo-background: #EE3643;
+  --logo-bg-shadow: rgba(0, 0, 0, 0.24);
+  --navigation-background: #32425C;
+  --navigation-bg-shadow: #293449;
+
+  --catalog-bg-item-yellow: #FFBF47;
+  --catalog-bg-item-blue: #3BBCE3;
+  --catalog-bg-item-lilac: #DC91D8;
+  --catalog-bg-item-green: #8ED78F;
+  --catalog-bg-item-yellow: #FFC047;
+  --catalog-new-logo-bg: #EE3643;
+
+  --slider-header-bg:rgba(0, 0, 0, 0.0001);
+  --popular-goods-manufactures-background: #F9F5F0;
+
+  --services-background: #F1F5F7;
+  --slider-menu-bg-nonactive: #32425C;
+  --slider-menu-bg-nonactive-hover: #293449;
+
+  /*font colors*/
   --basic-white: #FFFFFF;
+  --basic-black: #000000;
+  --basic-red: #EE3643;
+  --header-address-color: #32425C;
+  --after-login-account-color: #32425C;
+  --catalog-price-crossed: #A9A9A9;
+  --bookmarks-font: #32425C;
 
-  --special-yellow: #FFBF47;
-  --special-blue: #3BBCE3;;
-  --special-lilac: #DC91D8;
-  --special-greenlight: #8ED78F;
-  --special-yellowlight: #FFD180;
+  --slider-item-heading-font: #32425C;
+  --slider-menu-active: #32425C;
 
-  --success: #5FBB2D;
-  --warning: #FFBF47;
-  --error: #BA2732;
+  --footer-main-font: #F1F5F7;
+  --footer-menu-secondrow-font: #FFD180;
+
+  /*buttons*/
+  --basic-green: #63A63E;
+  --header-menu-text-on-click: rgba(255, 255, 255, 0.5);
+  --navigation-btn-hover-click: #1D2739;
+  --account-buttons-on-click: #C5C5C5;
+
+  --catalog-bg-item-hover: #C5C5C5;
+  --catalog-bg-item-click: #A9A9A9;
+
+  --slider-button-bg: #EE3643;
+  --slider-button-hover: #CA2C37;
+  --slider-button-click: #BA2732;
+
+  --price-tag-button-bg: #EE3643;
+  --buy-button-bg: #63A63E;
+  --buy-button-bg-shadow: #367315;
+  --buy-button-bg-hover: #5FBB2D;
+  --buy-button-bg-click: #518534;
+
+  --social-media-bg: linear-gradient(0deg, #212A3A, #212A3A);
+  --social-media-bg-hover-click: #EE3643;
 }
