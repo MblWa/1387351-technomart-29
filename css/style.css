@@ -351,7 +351,6 @@ img {
 }
 .popular-goods-item-description {
   font-size: 18px;
-  font-weight: 700;
   line-height: 1.11;
 }
 .popular-goods-item-old-price {
@@ -401,10 +400,6 @@ img {
   box-shadow:
     0px 1px 0px var(--services-item-shadow1),
     inset 0px 1px 0px var(--services-item-shadow2);
-  font-family: "Cuprum", Arial, sans-serif;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 1.42em;
 }
 .services-item-active {
   background-color: var(--basic-white);
@@ -415,6 +410,10 @@ img {
   outline: none;
   border: none;
   color: var(--basic-white);
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.428em;
 }
 .services-button-active {
   color: var(--services-slider-active-item);
@@ -469,7 +468,9 @@ img {
 .footer-second-bar {
   background-color: var(--footer-background2);
 }
-.footer-contacts a{
+
+.footer-contacts,
+.footer-contacts a {
 color: var(--footer-address-font);
 }
 .footer-navigation-first-row-list,
@@ -482,12 +483,14 @@ color: var(--footer-address-font);
 .footer-navigation-second-row-link {
   color: var(--footer-menu-secondrow-font);
 }
+.footer-contacts a:hover,
 .footer-navigation-first-row-link:hover {
   text-decoration: underline;
 }
 .footer-navigation-second-row-link:hover {
   text-decoration: underline;
 }
+.footer-contacts a:active,
 .footer-navigation-first-row-link:active {
   opacity: 0.5;
   text-decoration: none;
