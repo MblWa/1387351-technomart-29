@@ -71,8 +71,10 @@
   --navigation-background: #32425C;
   --footer-background1: #32425C;
   --navigation-bg-shadow: #293449;
-  --basic-white-transparent: rgba(255,255,255,0.3);
-
+  --basic-white-transparent03: rgba(255,255,255,0.3);
+  --basic-white-transparent05: rgba(255,255,255,0.5);
+  --cart-bg-hover: #5FBB2D;
+  --bookmarks-bg-hover: #161D29;
   --catalog-bg-item-yellow: #FFBF47;
   --catalog-bg-item-blue: #3BBCE3;
   --catalog-bg-item-lilac: #DC91D8;
@@ -177,6 +179,17 @@ img {
 .confirm-order-link {
   background-color: var(--basic-green);
 }
+.confirm-order-link:hover {
+  background-color: var(--cart-bg-hover);
+}
+.bookmarks-link:hover {
+  background-color: var(--bookmarks-bg-hover);
+}
+.bookmarks-link:active,
+.cart-link:active,
+.confirm-order-link:active {
+  color: var(--basic-white-transparent05);
+}
 .main-header-middle-bar-content {
   background-color: transparent;
 }
@@ -266,7 +279,7 @@ img {
   line-height: 1.25em;
 }
 .catalog-button {
-  background: var(--basic-white-transparent);
+  background: var(--basic-white-transparent03);
   mix-blend-mode: normal;
   color: var(--basic-white);
   font-size: 14px;
