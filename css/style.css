@@ -68,6 +68,7 @@
   --header-bar-background: #293449;
   --logo-background: #EE3643;
   --logo-bg-shadow: rgba(0, 0, 0, 0.24);
+  --telephone-link-bg: #F3F7F9;
   --navigation-background: #32425C;
   --footer-background1: #32425C;
   --navigation-bg-shadow: #293449;
@@ -193,6 +194,9 @@ img {
 .confirm-order-link:active {
   color: var(--basic-white-transparent05);
 }
+.added-goods-to-cart {
+  background-color: var(--basic-red);
+}
 .main-header-middle-bar-content {
   background-color: transparent;
 }
@@ -207,6 +211,9 @@ img {
   font-weight: 700;
   line-height: 1.43em;
   color: var(--basic-red);
+  background-color: var(--telephone-link-bg);
+  border: 3px solid var(--basic-white);
+  box-sizing: border-box;
 }
 .middle-bar-contacts-address {
   color: var(--header-address-color);
@@ -458,7 +465,8 @@ img {
   color: var(--bookmarks-font05);
 }
 /*services*/
-.main-services {
+.main-services,
+.few-words-about {
   background-color: var(--services-background);
 }
 .services-heading {
@@ -511,7 +519,8 @@ img {
 
 /*about*/
 .about-heading,
-.contacts-heading {
+.contacts-heading,
+.few-words-about-heading {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-size: 30px;
