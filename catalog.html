@@ -36,9 +36,9 @@
         </section>
         <section class="middle-bar-user-account">
           <h2>Личный кабинет</h2>
-          <p>Равшан Джамшутович</p>
-          <a href="">Мои заказы</a>
-          <a href="">Личный кабинет</a>
+          <p class="account-username">Равшан Джамшутович</p>
+          <a class="account-orders-link" href="">Мои заказы</a>
+          <a class="account-user-acc-link" href="">Личный кабинет</a>
         </section>
         <nav class="main-navigation">
           <ul class="site-navigation">
@@ -69,53 +69,54 @@
     </div>
   </header>
 
-  <main>
-    <div>
-      <ul>
-        <li><a href="catalog.html">КАТАЛОГ</a></li>
-        <li><a href="">ИНСТРУМЕНТ</a></li>
-        <li><a href="">ПЕРФОРАТОРЫ</a></li>
+  <main class="page-main">
+    <div class="wrapper">
+      <ul class="catalog-nav-breadcrumbs-list">
+        <li class="catalog-nav-breadcrumbs-item"><a href="catalog.html">КАТАЛОГ</a></li>
+        <li class="catalog-nav-breadcrumbs-item"><a href="">ИНСТРУМЕНТ</a></li>
+        <li class="catalog-nav-breadcrumbs-item"><a href="">ПЕРФОРАТОРЫ</a></li>
       </ul>
     </div>
 
-    <div>
-      <div>
-        <h1>ПЕРФОРАТОРЫ</h1>
+    <div class="wrapper">
+      <div class="catalog-main-section">
+        <h1 class="section-heading">ПЕРФОРАТОРЫ</h1>
       </div>
 
-      <div>
-        <h3>ФИЛЬТР:</h3>
-
-        <div>
-          <h4>ЦЕНА:</h4>
+      <div class="catalog-filters">
+        <h3 class="filters-heading">ФИЛЬТР:</h3>
+        <div class="filter-by-price">
+          <h4 class="filter-type-heading">ЦЕНА:</h4>
           <!-- Здесь будет форма фильтра -->
         </div>
-        <div>
-          <h4>ПРОИЗВОДИТЕЛИ:</h4>
-          <!-- Здесь будет форма фильтра -->
-          <h4>ПИТАНИЕ:</h4>
+        <div class="filter-by-manufactures">
+          <h4 class="filter-type-heading">ПРОИЗВОДИТЕЛИ:</h4>
           <!-- Здесь будет форма фильтра -->
         </div>
-        <button type="button">ПОКАЗАТЬ</button>
+        <div class="filter-by-power-supply">
+          <h4 class="filter-type-heading">ПИТАНИЕ:</h4>
+          <!-- Здесь будет форма фильтра -->
+        </div>
+        <button class="filter-show-button" type="button">ПОКАЗАТЬ</button>
       </div>
 
-      <div>
-        <div>
-          <h3>СОРТИРОВКА:</h3>
-          <ul>
-            <li>
+      <div class="catalog-window">
+        <div class="catalog-window-sortings">
+          <h3 class="sorting-heading">СОРТИРОВКА:</h3>
+          <ul class="sorting-list">
+            <li class="sorting-item">
               <a href="">ПО ЦЕНЕ</a>
             </li>
-            <li>
+            <li class="sorting-item">
               <a href="">ПО ТИПУ</a>
             </li>
-            <li>
+            <li class="sorting-item">
               <a href="">ПО ФУНКЦИОНАЛУ</a>
             </li>
           </ul>
 
-          <button type="button">ВВЕРХ</button>
-          <button type="button">ВНИЗ</button>
+          <button class="sorting-button-up" type="button">^</button>
+          <button class="sorting-button-down" type="button">v</button>
         </div>
 
         <div>
@@ -193,17 +194,17 @@
             </li>
           </ul>
         </div>
-        <ul>
-          <li>
+        <ul class="page-navigation-list">
+          <li class="page-navigation-item page-navigation-item-active">
             <a>1</a>
           </li>
-          <li>
+          <li class="page-navigation-item">
             <a href="">2</a>
           </li>
-          <li>
+          <li class="page-navigation-item">
             <a href="">3</a>
           </li>
-          <li>
+          <li class="page-navigation-item">
             <a href="">СЛЕДУЮЩАЯ</a>
           </li>
         </ul>

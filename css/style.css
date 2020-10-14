@@ -74,6 +74,7 @@
   --navigation-bg-shadow: #293449;
   --basic-white-transparent03: rgba(255, 255, 255, 0.3);
   --basic-white-transparent05: rgba(255, 255, 255, 0.5);
+  --basic-black-transparent03: rgba(0, 0, 0, 0.3);
   --bookmarks-font05: rgba(50, 66, 92, 0.5);
   --cart-bg-hover: #5FBB2D;
   --bookmarks-bg-hover: #161D29;
@@ -83,6 +84,7 @@
   --catalog-bg-item-green: #8ED78F;
   --catalog-bg-item-yellow: #FFC047;
   --catalog-new-logo-bg: #EE3643;
+  --catalog-filters-bg: #F7F3EC;
 
   --popular-goods-manufactures-background: #F9F5F0;
   --goods-bg-border: #EAEAEA;
@@ -121,6 +123,7 @@
 
   --catalog-bg-item-hover: #C5C5C5;
   --catalog-bg-item-click: #A9A9A9;
+  --catalog-filter-show-button-shadow: #E5E5E5;
 
   --slider-button-bg: #EE3643;
   --slider-button-hover: #CA2C37;
@@ -221,7 +224,10 @@ img {
   line-height: 1.71em;
 }
 .login-link,
-.register-link {
+.register-link,
+.account-username,
+.account-orders-link,
+.account-user-acc-link {
   background-color: var(--basic-white);
   color: var(--basic-black);
   font-size: 21px;
@@ -230,11 +236,18 @@ img {
 .login-link:hover,
 .login-link:focus,
 .register-link:hover,
-.register-link:focus {
+.register-link:focus,
+.account-orders-link:hover,
+.account-user-acc-link:hover,
+.account-orders-link:focus,
+.account-user-acc-link:focus {
   color: var(--basic-red);
 }
 .login-link:active,
-.register-link:active {
+.register-link:active,
+.account-orders-link:active,
+.account-user-acc-link:active,
+.account-username:active {
   color: var(--account-buttons-click);
 }
 .main-navigation {
@@ -623,4 +636,118 @@ color: var(--footer-address-font);
 }
 .social-networks-list {
   list-style: none;
+}
+
+/*catalog*/
+.catalog-nav-breadcrumbs-list {
+  list-style-image: url();
+}
+.catalog-nav-breadcrumbs-item a {
+  color: var(--basic-black);
+  font-size: 13px;
+  line-height: 1.38em;
+}
+.catalog-main-section {
+  background-color: var(--header-background);
+}
+.section-heading {
+  color: var(--bookmarks-font);
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1em;
+}
+
+/*filters*/
+.catalog-window-sortings {
+  background-color: var(--catalog-filters-bg);
+}
+.filters-heading,
+.sorting-heading {
+  background-color: var(--catalog-filters-bg);
+  font-size: 13px;
+  line-height: 1.38em;
+  font-weight: 400;
+}
+.filter-type-heading {
+  font-size: 17px;
+  line-height: 1.76em;
+  font-weight: 700;
+}
+.filter-show-button {
+  background-color: var(--basic-white);
+  border: none;
+  font-size: 13px;
+  line-height: 1.38em;
+  cursor: pointer;
+  border: 1px solid var(--catalog-filter-show-button-shadow);
+  box-sizing: border-box;
+}
+.filter-show-button:hover,
+.filter-show-button:focus {
+  border: 1px solid var(--catalog-bg-item-hover);
+}
+.filter-show-button:active {
+  border: 1px solid var(--basic-red);
+}
+.sorting-list {
+  list-style: none;
+}
+.sorting-item a {
+  color: var(--basic-black-transparent03);
+  font-size: 13px;
+  line-height: 1.38em;
+  border-bottom: 1px dotted var(--basic-red);
+
+}
+.sorting-item a:hover,
+.sorting-item a:focus {
+  color: var(--basic-black);
+  border-bottom: 1px solid var(--basic-red);
+}
+.sorting-item a:active {
+  color: var(--basic-red);
+  border-bottom: none;
+}
+.sorting-button-up,
+.sorting-button-down {
+  border: none;
+  background-color: var(--catalog-bg-item-hover);
+}
+.sorting-button-up:hover,
+.sorting-button-down:hover,
+.sorting-button-up:focus,
+.sorting-button-down:focus {
+  background-color: var(--basic-black);
+}
+.sorting-button-up:active,
+.sorting-button-down:active {
+  background-color: var(--basic-red);
+}
+.page-navigation-list {
+  list-style: none;
+}
+.page-navigation-item {
+  background-color: var(--basic-white);
+  border: none;
+  font-size: 13px;
+  line-height: 1.38em;
+  cursor: pointer;
+  border: 1px solid var(--catalog-filter-show-button-shadow);
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+.page-navigation-item a {
+  color: var(--basic-black);
+}
+.page-navigation-item:hover,
+.page-navigation-item:focus {
+  border: 1px solid var(--catalog-bg-item-hover);
+}
+.page-navigation-item:active {
+  border: 1px solid var(--basic-red);
+}
+.page-navigation-item-active {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
 }
