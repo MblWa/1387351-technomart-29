@@ -700,6 +700,10 @@ color: var(--footer-address-font);
   border-bottom: 1px dotted var(--basic-red);
 
 }
+.active-sorting a {
+  color: var(--basic-red);
+  border: none;
+}
 .sorting-item a:hover,
 .sorting-item a:focus {
   color: var(--basic-black);
