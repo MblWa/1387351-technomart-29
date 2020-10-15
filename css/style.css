@@ -173,6 +173,24 @@ img {
 .main-menubar {
   background-color: var(--header-bar-background);
 }
+.main-header-logo {
+  width: 220px;
+  height: 47px;
+  background-color: var(--logo-background);
+  background-image: url(../img/logo_technomart_header.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: inset 0px -5px 0px var(--logo-bg-shadow);
+}
+.main-footer-logo {
+  width: 220px;
+  height: 68px;
+  background-color: var(--logo-background);
+  background-image: url(../img/logo_technomart_footer.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: inset 0px -5px 0px var(--logo-bg-shadow);
+}
 .search-bar,
 .bookmarks-link,
 .cart-link,
