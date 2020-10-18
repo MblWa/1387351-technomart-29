@@ -11,7 +11,7 @@
 <body class="page-body">
   <header class="main-header">
     <div class="main-menubar">
-      <div class="wrapper">
+      <div class="wrapper header-grid-menubar">
         <a class="main-header-logo">
           <img src="img\logo_technomart_header.svg" width="220" height="47" alt="Логотип компании ТЕХНОМАРТ">
         </a>
@@ -27,14 +27,14 @@
           Интернет-магазин строительных материалов и инструментов для ремонта
         </p>
         <section class="middle-bar-contacts">
-          <h2>Как нас найти</h2>
+          <h2 class="visually-hidden-elements">Как нас найти</h2>
           <a class="middle-bar-contacts-telephone-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <p class="middle-bar-contacts-address">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
         </section>
         <section class="middle-bar-user-account">
-          <h2>Личный кабинет</h2>
+          <h2 class="visually-hidden-elements">Личный кабинет</h2>
           <a class="login-link" href="">Войти</a>
           <a class="register-link" href="">Регистрация</a>
         </section>
@@ -70,7 +70,7 @@
   <main class="page-main">
     <div class="wrapper">
       <section class="catalog-and-slider">
-        <h2>Каталог и слайдер</h2>
+        <h2 class="visually-hidden-elements">Каталог и слайдер</h2>
         <ul class="catalog-list">
           <li class="catalog-list-item">
             <h3 class="catalog-list-item-heading">Материалы</h3>
@@ -243,7 +243,7 @@
       </div>
     </div>
 
-    <div class="wrapper">
+    <div class="wrapper about-grid">
       <section class="about">
         <h2 class="about-heading">КОМПАНИЯ &laquo;ТЕХНОМАРТ&raquo;</h2>
         <p class="about-description">
@@ -276,9 +276,9 @@
 
   <footer class="page-footer">
     <div class="footer-first-bar">
-      <div class="wrapper">
+      <div class="wrapper first-bar-grid">
         <section class="footer-about-company">
-          <h2>Данные о компании</h2>
+          <h2 class="visually-hidden-elements">Данные о компании</h2>
           <a class="main-footer-logo">
             <img src="img\logo_technomart_footer.svg" width="220" height="68" alt="Логотип компании ТЕХНОМАРТ">
           </a>
@@ -288,7 +288,7 @@
           </p>
         </section>
         <section class="footer-navigation">
-          <h2>Навигация по сайту</h2>
+          <h2 class="visually-hidden-elements">Навигация по сайту</h2>
           <ul class="footer-navigation-first-row-list">
             <li class="footer-navigation-first-row-item">
               <a class="footer-navigation-first-row-link" href="">Компания</a>
@@ -325,14 +325,14 @@
     </div>
 
     <div class="footer-second-bar">
-      <div class="wrapper">
+      <div class="wrapper second-bar-grid">
         <p class="footer-copyright">
           &copy;&nbsp;2010&ndash;2019 Компания &laquo;Техномарт&raquo;<br>
           Все права защищены
         </p>
 
         <section class="footer-social-networks">
-          <h2>Социальные сети</h2>
+          <h2 class="visually-hidden-elements">Социальные сети</h2>
           <ul class="social-networks-list">
             <li class="social-networks-item">
               <a class="social-networks-link" href="">Вконтакте</a>
@@ -345,12 +345,14 @@
             </li>
           </ul>
         </section>
-        <p class="footer-feedback">
-          Обратная связь:
-        </p>
-        <address>
-          <a class="footer-feedback-address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </address>
+        <div class="footer-feedback">
+          <p class="footer-feedback-content">
+            Обратная связь:
+          </p>
+          <address>
+            <a class="footer-feedback-address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </address>
+        </div>
         <p class="footer-developedby">
           Разработано&nbsp;&mdash;<br>
           <a class="footer-developedby-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
