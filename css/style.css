@@ -606,6 +606,7 @@ ul {
 }
 .popular-goods-item-buttons {
   grid-area: area;
+  z-index: 2;
   display: flex;
   opacity: 0;
   flex-direction: column;
