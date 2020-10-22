@@ -250,7 +250,6 @@ img {
 }
 .three-column-grid {
   grid-template-columns: repeat(3, 220px);
-  grid-template-rows: repeat(3, 318px);
   grid-gap: 20px;
 }
 .popular-manufactures {
@@ -356,6 +355,7 @@ img {
 }
 .page-navigation-list {
   display: flex;
+  grid-gap: 10px;
 }
 .catalog-of-sorted-items {
   padding-top: 28px;
@@ -369,7 +369,12 @@ img {
 .main-menubar {
   background-color: var(--header-bar-background);
 }
-
+.main-header-logo-svg {
+  fill: var(--basic-red);
+}
+.main-header-logo-svg:active {
+  fill: var(--slider-button-click);
+}
 .search-bar,
 .bookmarks-link,
 .cart-link,
@@ -400,9 +405,11 @@ img {
 }
 .bookmarks-link:active,
 .cart-link:active,
-.confirm-order-link:active {
+.confirm-order-link:active,
+.search-bar:active {
   color: var(--basic-white-transparent05);
 }
+
 .added-goods-to-cart {
   background-color: var(--basic-red);
 }
@@ -431,11 +438,15 @@ img {
 }
 .login-link,
 .register-link,
-.account-username,
-.account-orders-link,
-.account-user-acc-link {
+.account-username {
   background-color: var(--basic-white);
   color: var(--basic-black);
+  font-size: 21px;
+  line-height: 1em;
+}
+.account-orders-link,
+.account-user-acc-link {
+  color: var(--after-login-account-color);
   font-size: 21px;
   line-height: 1em;
 }
@@ -568,12 +579,15 @@ ul {
 .popular-manufactures-all-link:hover,
 .slider-button-open-catalog:focus,
 .popular-goods-all-link:focus,
-.popular-manufactures-all-link:focus {
+.popular-manufactures-all-link:focus,
+.popular-goods-item-price-link:hover,
+.popular-goods-item-price-link:focus {
   background-color: var(--slider-button-hover);
 }
 .slider-button-open-catalog:active,
 .popular-goods-all-link:active,
-.popular-manufactures-all-link:active {
+.popular-manufactures-all-link:active,
+.popular-goods-item-price-link:active {
   background-color: var(--slider-button-click);
 }
 /*popular goods*/
@@ -958,6 +972,9 @@ color: var(--footer-address-font);
   border: 1px solid var(--basic-red);
 }
 .page-navigation-item-active {
+  background-color: var(--basic-red);
+}
+.page-navigation-item-active a {
   background-color: var(--basic-red);
   color: var(--basic-white);
 }
