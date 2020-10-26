@@ -194,7 +194,8 @@ img {
 }
 .main-header-middle-bar-content {
   display: grid;
-  grid-template-columns: 320px 1fr 320px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
 .site-navigation {
@@ -241,7 +242,7 @@ img {
 }
 .popular-goods {
   display: grid;
-  grid-template-rows: 89px 318px;
+  grid-template-rows: min-content min-content;
   grid-gap: 20px;
   padding-top: 59px;
 }
@@ -318,8 +319,10 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
 .catalog-nav-breadcrumbs-list {
   display: flex;
+
 }
 .catalog-nav-breadcrumbs-item {
   padding-right: 17px;
@@ -365,7 +368,7 @@ img {
 }
 .catalog-of-sorted-items {
   padding-top: 28px;
-  padding-bottom: 48px;
+  padding-bottom: 58px;
 }
 /*header*/
 .main-header {
@@ -431,10 +434,10 @@ img {
   font-size: 16px;
   line-height: 1.4375em;
   color: var(--basic-red);
-  margin: 42px 0 44.5px 30px;
+  margin: 42.5px 0 44.5px 30px;
 }
 .middle-bar-contacts {
-  margin-top: 42px;
+  margin-top: 53px;
 }
 .middle-bar-contacts-telephone-link {
   font-size: 21px;
@@ -458,8 +461,20 @@ img {
   align-items: flex-start;
   justify-content: flex-end;
   grid-gap: 10px;
-  margin-top: 42px;
+  margin-top: 46px;
 }
+.middle-bar-user-account.after-login {
+  display: grid;
+  grid-template-columns: 134px min-content 1fr;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-areas: "a a a"
+                        "b dot c";
+  grid-gap: 0px;
+  grid-row-gap: 7px;
+  margin-top: 46px;
+  /*justify-content: center;*/
+}
+
 .login-link,
 .register-link,
 .account-username {
@@ -467,6 +482,10 @@ img {
   color: var(--basic-black);
   font-size: 21px;
   line-height: 1em;
+}
+.account-username {
+  grid-area: a;
+  padding: 12px 57px 12px 56px;
 }
 .register-link {
   padding: 12px 24px;
@@ -477,8 +496,20 @@ img {
 .account-orders-link,
 .account-user-acc-link {
   color: var(--after-login-account-color);
-  font-size: 21px;
-  line-height: 1em;
+  font-size: 16px;
+  line-height: 1.125em;
+}
+.account-orders-link {
+  grid-area: b;
+  text-align: right;
+  margin-right: 13px;
+}
+.account-user-acc-link {
+  grid-area: c;
+  margin-left: 13px;
+}
+.account-decorative-dot {
+  grid-area: dot;
 }
 .login-link:hover,
 .login-link:focus,
@@ -521,15 +552,6 @@ img {
   background: var(--navigation-btn-click);
   box-shadow: inset 0px -5px 0px #293449;
 }
-/*.site-navigation li:not(:first-of-type):hover,
-.site-navigation li:not(:first-of-type):focus {
-  background: var(--navigation-btn-hover);
-  box-shadow: inset 0px -5px 0px #293449;
-}
-.site-navigation li:not(:first-of-type):active {
-  background: var(--navigation-btn-click);
-  box-shadow: inset 0px -5px 0px #293449;
-}*/
 
 /*main*/
 /*catalog list*/
@@ -537,6 +559,9 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.catalog-nav-breadcrumbs-list {
+  padding: 21px 0 20px 0;
 }
 .catalog-list-item {
   font-family: "Cuprum", Arial, sans-serif;
@@ -658,7 +683,7 @@ ul {
   color: var(--popular-goods-manufactures-font);
   font-size: 30px;
   line-height: 1em;
-  padding-left: 28px;
+  padding: 29px 0 30px 28px;
 }
 /*popular-goods-n-manuf-slider*/
 
@@ -680,6 +705,7 @@ ul {
   font-weight: 700;
   line-height: 1.06;
   text-decoration: line-through;
+  padding-bottom: 13px;
 }
 .popular-goods-item-price-link {
   background-color: var(--basic-red);
@@ -687,8 +713,8 @@ ul {
   font-size: 17px;
   font-weight: 700;
   line-height: 1.06;
+  margin-bottom: 31px;
   margin-top: auto;
-  margin-bottom: 21px;
 }
 .popular-goods-bookmarks-button {
   cursor: pointer;
@@ -734,11 +760,12 @@ ul {
   align-items: center;
 }
 .popular-goods-image {
-  height: 60%;
+  height: 159px;
   width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
+  padding-bottom: 19px;
 }
 .popular-goods-image-bg {
   background-color: var(--basic-white);
@@ -877,6 +904,10 @@ ul {
   font-size: 30px;
   line-height: 1em;
   padding-bottom: 24px;
+}
+
+.few-words-about-heading {
+  padding-top: 64px;
 }
 .about-description-list {
   list-style-image: url();
@@ -1027,10 +1058,13 @@ ul {
 .catalog-nav-breadcrumbs-list {
   list-style-image: url();
 }
-.catalog-nav-breadcrumbs-item a {
-  color: var(--basic-black);
+.catalog-nav-breadcrumbs-item {
   font-size: 13px;
   line-height: 1.38em;
+}
+.breadcrumbs-link {
+  color: var(--basic-black);
+  font-size: 13px;
 }
 .catalog-main-section {
   background-color: var(--header-background);
@@ -1041,6 +1075,8 @@ ul {
   font-weight: 400;
   font-size: 30px;
   line-height: 1em;
+  padding: 29px 0 30px 29px;
+  margin: 0;
 }
 
 /*filters*/
@@ -1053,20 +1089,31 @@ ul {
   font-size: 13px;
   line-height: 1.38em;
   font-weight: 400;
+  padding: 10px 0 10px 18px;
 }
 .filter-type-heading {
   font-size: 17px;
   line-height: 1.76em;
   font-weight: 700;
 }
+.filter-type-heading.for-price {
+  padding: 14.15px 0 10.85px 0;
+}
+.filter-type-heading.for-manufactures {
+  padding: 16px 0 15px 0;
+}
+.filter-type-heading.for-power-supply {
+  padding: 18px 0 21px 0;
+}
 .filter-show-button {
+  width: 100%;
   background-color: var(--basic-white);
   border: none;
   font-size: 13px;
   line-height: 1.38em;
   cursor: pointer;
   border: 1px solid var(--catalog-filter-show-button-shadow);
-  box-sizing: border-box;
+  padding: 10px 0;
 }
 .filter-show-button:hover,
 .filter-show-button:focus {
@@ -1111,9 +1158,9 @@ ul {
 .sorting-button-down:active {
   background-color: var(--basic-red);
 }
-.page-navigation-item {
+.page-navigation-item-link {
+  display: flex;
   background-color: var(--basic-white);
-  border: none;
   font-size: 13px;
   line-height: 1.38em;
   cursor: pointer;
@@ -1121,20 +1168,28 @@ ul {
   box-sizing: border-box;
   border-radius: 2px;
 }
-.page-navigation-item a {
+.page-navigation-item-link {
+  display: flex;
   color: var(--basic-black);
+  padding: 10px 15px;
 }
-.page-navigation-item:hover,
-.page-navigation-item:focus {
+.page-navigation-item-link.next-page-link {
+  padding: 10px 31px;
+}
+.page-navigation-item-link:hover:not(.page-navigation-item-active),
+.page-navigation-item-link:focus:not(.page-navigation-item-active) {
   border: 1px solid var(--catalog-bg-item-hover);
 }
-.page-navigation-item:active {
+.page-navigation-item-link:active:not(.page-navigation-item-active) {
   border: 1px solid var(--basic-red);
 }
 .page-navigation-item-active {
   background-color: var(--basic-red);
 }
-.page-navigation-item-active a {
+.page-navigation-item-link.page-navigation-item-active {
   background-color: var(--basic-red);
   color: var(--basic-white);
+}
+.few-words-about-content {
+  padding-bottom: 67px;
 }
