@@ -378,9 +378,11 @@ img {
 .main-menubar {
   background-color: var(--header-bar-background);
 }
+.main-footer-logo-svg,
 .main-header-logo-svg {
   fill: var(--basic-red);
 }
+.main-footer-logo-svg:active:not(.switched-off-logo),
 .main-header-logo-svg:active:not(.switched-off-logo) {
   fill: var(--slider-button-click);
 }
