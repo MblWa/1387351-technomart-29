@@ -831,6 +831,8 @@ ul {
 .slider-list-item:nth-child(2) {
   background-image: url(../img/slide_2_bg.png);
   background-repeat: no-repeat;
+}
+.slider-list-item.hidden-slide {
   display: none;
 }
 .slider-heading {
