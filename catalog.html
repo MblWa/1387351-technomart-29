@@ -56,13 +56,13 @@
         <section class="middle-bar-user-account after-login">
           <h2 class="visually-hidden-elements">Личный кабинет</h2>
           <p class="account-username">Равшан Джамшутович</p>
-          <a class="account-orders-link" href="">Мои заказы</a>
+          <a class="user-account-links account-orders-link" href="">Мои заказы</a>
           <div class="account-decorative-dot">
-            <p>
-              o
-            </p>
+            <svg class="user-account-links decorative-dot-svg" width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.00023 0.994136C3.09715 0.994136 3.98643 1.88356 3.98643 2.9801C3.98643 4.07757 3.09715 4.96646 2.00023 4.96646C0.903104 4.96646 0.013898 4.07757 0.013898 2.9801C0.013898 1.88356 0.903104 0.994136 2.00023 0.994136Z"/>
+            </svg>
           </div>
-          <a class="account-user-acc-link" href="">Личный кабинет</a>
+          <a class="user-account-links account-user-acc-link" href="">Личный кабинет</a>
         </section>
       </div>
       <nav class="main-navigation">
@@ -94,7 +94,7 @@
   </header>
 
   <main class="page-main">
-    <div class="wrapper">
+    <div class="wrapper catalog-breadcrumbs">
       <ul class="catalog-nav-breadcrumbs-list">
         <li class="catalog-nav-breadcrumbs-item">
           <a class="breadcrumbs-link" href="catalog.html">КАТАЛОГ</a>
@@ -135,18 +135,18 @@
           <h3 class="sorting-heading">СОРТИРОВКА:</h3>
           <ul class="sorting-list">
             <li class="sorting-item active-sorting">
-              <a href="">ПО ЦЕНЕ</a>
+              <a class="sorting-item-link" href="">ПО ЦЕНЕ</a>
             </li>
             <li class="sorting-item">
-              <a href="">ПО ТИПУ</a>
+              <a class="sorting-item-link" href="">ПО ТИПУ</a>
             </li>
             <li class="sorting-item">
-              <a href="">ПО ФУНКЦИОНАЛУ</a>
+              <a class="sorting-item-link" href="">ПО ФУНКЦИОНАЛУ</a>
             </li>
           </ul>
           <div class="sorting-buttons">
-            <button class="sorting-button-up" type="button">^</button>
-            <button class="sorting-button-down" type="button">v</button>
+            <button class="sorting-button-up active-sorting-button" type="button"></button>
+            <button class="sorting-button-down" type="button"></button>
           </div>
 
         </div>
@@ -178,7 +178,7 @@
               <p class="popular-goods-item-old-price">30500 Р.</p>
               <a class="popular-goods-item-price-link" href="">25500 Р.</a>
             </li>
-            <li class="popular-goods-item">
+            <li class="popular-goods-item new-item">
               <div class="popular-goods-image">
                 <button class="popular-goods-buy-button" type="button">КУПИТЬ</button>
                 <button class="popular-goods-bookmarks-button" type="button">В ЗАКЛАДКИ</button>
@@ -190,7 +190,7 @@
               <p class="popular-goods-item-old-price">30500 Р.</p>
               <a class="popular-goods-item-price-link" href="">25500 Р.</a>
             </li>
-            <li class="popular-goods-item">
+            <li class="popular-goods-item new-item">
               <div class="popular-goods-image">
                 <button class="popular-goods-buy-button" type="button">КУПИТЬ</button>
                 <button class="popular-goods-bookmarks-button" type="button">В ЗАКЛАДКИ</button>
@@ -214,7 +214,7 @@
               <p class="popular-goods-item-old-price">30500 Р.</p>
               <a class="popular-goods-item-price-link" href="">25500 Р.</a>
             </li>
-            <li class="popular-goods-item">
+            <li class="popular-goods-item new-item">
               <div class="popular-goods-image">
                 <button class="popular-goods-buy-button" type="button">КУПИТЬ</button>
                 <button class="popular-goods-bookmarks-button" type="button">В ЗАКЛАДКИ</button>
@@ -225,7 +225,7 @@
               <h3 class="popular-goods-item-description">Перфоратор BOSCH BFG 2000</h3>
               <a class="popular-goods-item-price-link" href="">12500 Р.</a>
             </li>
-            <li class="popular-goods-item">
+            <li class="popular-goods-item new-item">
               <div class="popular-goods-image">
                 <button class="popular-goods-buy-button" type="button">КУПИТЬ</button>
                 <button class="popular-goods-bookmarks-button" type="button">В ЗАКЛАДКИ</button>
@@ -249,7 +249,7 @@
               <p class="popular-goods-item-old-price">30500 Р.</p>
               <a class="popular-goods-item-price-link" href="">25500 Р.</a>
             </li>
-            <li class="popular-goods-item">
+            <li class="popular-goods-item new-item">
               <div class="popular-goods-image">
                 <button class="popular-goods-buy-button" type="button">КУПИТЬ</button>
                 <button class="popular-goods-bookmarks-button" type="button">В ЗАКЛАДКИ</button>
@@ -376,13 +376,13 @@
           <h2 class="visually-hidden-elements">Социальные сети</h2>
           <ul class="social-networks-list">
             <li class="social-networks-item">
-              <a class="social-networks-link" href="">Вконтакте</a>
+              <a class="social-networks-link vk-logo" href=""></a>
             </li>
             <li class="social-networks-item">
-              <a class="social-networks-link" href="">Фейсбук</a>
+              <a class="social-networks-link fb-logo" href=""></a>
             </li>
             <li class="social-networks-item">
-              <a class="social-networks-link" href="">Инстаграм</a>
+              <a class="social-networks-link inst-logo" href=""></a>
             </li>
           </ul>
         </section>
