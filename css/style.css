@@ -1026,7 +1026,7 @@ ul {
 }
 .popular-goods-item:hover .popular-goods-buy-button,
 .popular-goods-item:hover .popular-goods-bookmarks-button {
-  z-index: 1;
+  z-index: 3;
 }
 .popular-goods-buy-button:hover,
 .popular-goods-buy-button:focus {
@@ -1039,7 +1039,7 @@ ul {
 }
 .popular-goods-buy-button:focus,
 .popular-goods-buy-button:focus + .popular-goods-bookmarks-button {
-  z-index: 1;
+  z-index: 3;
 }
 .popular-goods-buy-button:active {
   background-color: var(--buy-button-bg-click);
@@ -1056,7 +1056,7 @@ ul {
 }
 .popular-goods-bookmarks-button:focus,
 .popular-goods-bookmarks-button:focus + .popular-goods-buy-button {
-  z-index: 1;
+  z-index: 3;
 }
 .popular-goods-bookmarks-button:active {
   border-color: var(--bookmarks-font05);
