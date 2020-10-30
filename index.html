@@ -464,33 +464,34 @@
 
   <section class="modal modal-feedback visually-hidden-elements">
     <h2 class="visually-hidden-elements">Напишите нам!</h2>
-    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label class="visually-hidden" for="login-login">Логин</label>
-        <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="email@example.com">
+    <form class="feedback-form" id="feedback-form-id" action="https://echo.htmlacademy.ru" method="post">
+      <p class="feedback-text-block">
+        <label class="modal-label-heading" for="name-feedback">Ваше имя:</label>
+        <input class="name-feedback-input" id="name-feedback" type="text" name="name-feedback" placeholder="Имя Фамилия">
       </p>
-      <p>
-        <label class="visually-hidden" for="login-password">Пароль</label>
-        <input class="login-icon-password" id="login-password" type="password" name="password" placeholder="••••••••">
+      <p class="feedback-text-block">
+        <label class="modal-label-heading" for="email-feedback">Ваш e-mail:</label>
+        <input class="email-feedback-input" id="email-feedback" type="email" name="email-feedback" placeholder="email@example.com">
       </p>
-      <p class="login-help">
-        <label class="login-checkbox">
-          <input class="visually-hidden" type="checkbox" name="remember">
-          <span class="checkbox-indicator"></span>
-          Запомните меня
-        </label>
+      <p class="feedback-text-block">
+        <label class="modal-label-heading" for="textfield-feedback">Текст письма:</label>
+        <textarea class="textfield-feedback-input" cols="40" rows="5" id="textfield-feedback" type="text" name="textfield-feedback" placeholder="В свободной форме"></textarea>
       </p>
-      <button class="modal-feedback-send-button" type="submit">Отправить</button>
     </form>
+    <div class="modal-feedback-footer">
+      <button class="modal-feedback-send-button" type="submit" form="feedback-form-id">Отправить</button>
+    </div>
     <button class="modal-close-button for-feedback" type="button" aria-label="Закрыть"></button>
   </section>
 
   <section class="modal modal-added-goods visually-hidden-elements">
     <h2 class="visually-hidden-elements">Окно добавления товара в корзину</h2>
-    <p class="modal-description">Товар добавлен в корзину</p>
+    <p class="modal-description">Товар добавлен в корзину!</p>
     <!-- Здесь будет форма добавления товара в корзину-->
     <button class="modal-close-button" type="button" aria-label="Закрыть"></button>
   </section>
+
   <script src="js/map.js"></script>
+  <script src="js/feedback.js"></script>
 </body>
 </html>
