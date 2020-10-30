@@ -852,29 +852,45 @@ ul {
 }
 .slider-button-open-catalog,
 .popular-goods-all-link,
-.popular-manufactures-all-link {
-  display: block;
-  width: 192px;
-  padding: 11px 0 9px 0px;
+.popular-manufactures-all-link,
+.make-credit-request-link {
   margin-right: 14px;
   font-family: "Cuprum", Arial, sans-serif;
   background-color: var(--slider-button-bg);
   color: var(--basic-white);
   font-size: 14px;
-  line-height: 1.28em;
+  line-height: 1.29em;
   text-align: center;
+  text-transform: uppercase;
+}
+.slider-button-open-catalog {
+  padding: 11px 24px 9px 24px;
+}
+.popular-goods-all-link {
+  padding: 11px 46px 9px 46px;
+}
+.popular-manufactures-all-link {
+  padding: 11px 38px 9px 39px;
+}
+.make-credit-request-link {
+  padding: 10px 45px;
+  margin: 0;
+  border-radius: 2px;
 }
 .slider-button-open-catalog:hover,
 .popular-goods-all-link:hover,
 .popular-manufactures-all-link:hover,
 .slider-button-open-catalog:focus,
 .popular-goods-all-link:focus,
-.popular-manufactures-all-link:focus {
+.popular-manufactures-all-link:focus,
+.make-credit-request-link:hover,
+.make-credit-request-link:focus {
   background-color: var(--slider-button-hover);
 }
 .slider-button-open-catalog:active,
 .popular-goods-all-link:active,
-.popular-manufactures-all-link:active {
+.popular-manufactures-all-link:active,
+.make-credit-request-link:active {
   background-color: var(--slider-button-click);
 }
 /*popular goods*/
@@ -1092,8 +1108,21 @@ ul {
   padding-bottom: 70px;
 }
 .services-slider-list {
-  background: url("../img/logistics-car.svg") no-repeat bottom 2px right 0px;
+
 }
+.services-slider-item {
+  height: 100%;
+}
+
+.services-slider-item.delivery-slide {
+   background: url("../img/logistics-car.svg") no-repeat bottom 2px right 0px;
+ }
+ .services-slider-item.guarantee-slide {
+    background: url("../img/guarantee.png") no-repeat bottom 2px right 0px;
+  }
+  .services-slider-item.credit-slide {
+     background: url("../img/credit-slide.png") no-repeat bottom 2px right 0px;
+   }
 .services-slider-item-heading {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
@@ -1101,9 +1130,13 @@ ul {
   font-size: 30px;
   line-height: 1em;
   padding-bottom: 30px;
+  text-transform: uppercase;
 }
 .services-slider-item-description {
-  width: 275px;
+  width: 410px;
+}
+.services-slider-item-description.credit-description {
+  padding-bottom: 36px;
 }
 .services-list {
   padding-bottom: 99px;
