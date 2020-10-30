@@ -587,10 +587,10 @@ img {
 }
 .middle-bar-user-account.after-login {
   display: grid;
-  grid-template-columns: 134px min-content 1fr;
+  grid-template-columns: 134px min-content 1fr min-content;
   grid-template-rows: repeat(2, min-content);
-  grid-template-areas: "a a a"
-                        "b dot c";
+  grid-template-areas: "a a a logout"
+                        "b dot c c";
   grid-gap: 0px;
   grid-row-gap: 7px;
   margin-top: 46px;
@@ -607,16 +607,13 @@ img {
 }
 .account-username {
   grid-area: a;
-  padding: 12px 57px 12px 56px;
+  padding: 12px 0 12px 56px;
 }
-.account-username::before,
-.account-username::after {
+.account-username::before {
   content: "";
   position: absolute;
   background-repeat: no-repeat;
   background-position: 0 0;
-}
-.account-username::before {
   top: 13px;
   left: 15px;
   width: 20px;
@@ -630,20 +627,22 @@ img {
 .account-username:active::before {
   background-image: url("../img/icon-user.svg");
 }
-.account-username::after {
+.account-username-logout {
+  grid-area: logout;
   content: "";
-  position: absolute;
-  top: 14px;
-  right: 17px;
+  background-color: var(--basic-white);
+  background-repeat: no-repeat;
+  background-position: top 14px  right 17px;
   width: 20px;
   height: 17px;
   background-image: url("../img/icon-logout.svg");
+  padding: 14px 17px 14px 0;
 }
-.account-username:hover::after,
-.account-username:focus::after {
+.account-username-logout:hover,
+.account-username-logout:focus {
   background-image: url("../img/icon-logout-hover.svg");
 }
-.account-username:active::after {
+.account-username-logout:active {
   background-image: url("../img/icon-logout.svg");
 }
 .register-link {
