@@ -457,19 +457,36 @@
   </section>
 
   <section class="modal modal-map visually-hidden-elements">
-    <a class="map-link" href=""></a>
     <h2 class="visually-hidden-elements">Как до нас добраться</h2>
+      <iframe class="frame-for-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="943" height="442" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
     <button class="modal-close-button for-map" type="button" aria-label="Закрыть"></button>
   </section>
 
   <section class="modal modal-feedback visually-hidden-elements">
-    <h2>Напишите нам!</h2>
-    <!-- Здесь будет форма обратной связи -->
-    <button class="modal-close-button" type="button" aria-label="Закрыть">Закрыть</button>
+    <h2 class="visually-hidden-elements">Напишите нам!</h2>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label class="visually-hidden" for="login-login">Логин</label>
+        <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="email@example.com">
+      </p>
+      <p>
+        <label class="visually-hidden" for="login-password">Пароль</label>
+        <input class="login-icon-password" id="login-password" type="password" name="password" placeholder="••••••••">
+      </p>
+      <p class="login-help">
+        <label class="login-checkbox">
+          <input class="visually-hidden" type="checkbox" name="remember">
+          <span class="checkbox-indicator"></span>
+          Запомните меня
+        </label>
+      </p>
+      <button class="modal-ffedback-send-button" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close-button for-feedback" type="button" aria-label="Закрыть"></button>
   </section>
 
   <section class="modal modal-added-goods visually-hidden-elements">
-    <h2>Окно добавления товара в корзину</h2>
+    <h2 class="visually-hidden-elements">Окно добавления товара в корзину</h2>
     <p class="modal-description">Товар добавлен в корзину</p>
     <!-- Здесь будет форма добавления товара в корзину-->
     <button class="modal-close-button" type="button" aria-label="Закрыть"></button>

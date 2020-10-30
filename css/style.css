@@ -1577,33 +1577,36 @@ ul {
   margin: auto;
   position: fixed;
   z-index: 4;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
+  border-top:7px solid var(--basic-red);
 }
 .modal-map {
   width: 943px;
-  height: 449px;
-  background: url("../img/map-big.png") no-repeat 50% 50%;
+  height: 442px;
 }
-.modal::before {
-  position: absolute;
-  top: 0;
-  content: "";
-  width: 100%;
-  height: 7px;
-  background-color: var(--basic-red);
+.modal-feedback {
+  width: 620px;
+  height: 430px;
+  background-color: var(--basic-white);
 }
+
 .modal-close-button {
   position: absolute;
   width: 21px;
   height: 21px;
   border: 0;
   cursor: pointer;
+  background-color: transparent;
   background-image: url("../img/icon-close.svg");
 }
 .modal-close-button.for-map {
   top: 17px;
   right: 10px;
 }
-.map-link {
-  display: block;
-  height: 100%;
+.modal-close-button.for-feedback {
+  top: 21px;
+  right: 11px;
+}
+.frame-for-map {
+  border: none;
 }
