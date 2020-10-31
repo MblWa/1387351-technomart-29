@@ -524,7 +524,9 @@ input {
   cursor: pointer;
   padding: 12px 12px 13px 30px;
 }
-.search-bar:hover .search-bar-button {
+.search-bar:hover .search-bar-button,
+.search-bar-button:hover,
+.search-bar-button:focus {
   opacity: 1;
 }
 input.search-bar-input:focus,
