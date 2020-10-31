@@ -529,12 +529,12 @@ input {
 .search-bar-button:focus {
   opacity: 1;
 }
-input.search-bar-input:focus,
-input.search-bar-input:focus::placeholder {
+.search-bar-input:focus,
+.search-bar-input:focus::placeholder {
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
-input.search-bar-input:focus + .search-bar-button {
+.search-bar-input:focus + .search-bar-button {
   opacity: 1;
   background-color: var(--basic-white);
   background-image: url("../img/icon-search-active.svg");
