@@ -1485,6 +1485,8 @@ ul {
   padding: 18px 0 21px 0;
 }
 .filter-show-button {
+  display: block;
+  text-align: center;
   width: 100%;
   background-color: var(--basic-white);
   border: none;
@@ -1841,4 +1843,87 @@ ul {
 .price-controls-input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+.filter-by-manufactures {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid var(--goods-bg-border);
+}
+.filter-by-manufactures-label,
+.filter-by-power-supply-label {
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 1.27em;
+  padding-left: 35px;
+  display: flex;
+  align-items: center;
+}
+.manufactures-checkbox-input,
+.power-supply-radio-input {
+  position: absolute;
+  appearance: none;
+}
+.manufactures-span-checkbox {
+  position: absolute;
+  margin-left: -35px;
+  width: 23px;
+  height: 23px;
+  content: "";
+  background: url("../img/checkbox-off.svg") no-repeat 0 0;
+}
+.manufactures-checkbox-input:checked + .manufactures-span-checkbox {
+  width: 27px;
+  height: 23px;
+  background: url("../img/checkbox-on.svg") no-repeat 0 0;
+}
+.manufactures-checkbox-input:hover + .manufactures-span-checkbox,
+.manufactures-checkbox-input:focus + .manufactures-span-checkbox {
+  background: url("../img/checkbox-off-hover.svg") no-repeat 0 0;
+}
+.manufactures-checkbox-input:checked:hover + .manufactures-span-checkbox,
+.manufactures-checkbox-input:checked:focus + .manufactures-span-checkbox {
+  background: url("../img/checkbox-on-hover.svg") no-repeat 0 0;
+}
+.manufactures-checkbox-input:disabled + .manufactures-span-checkbox {
+  background: url("../img/checkbox-off-disabled.svg") no-repeat 0 0;
+}
+.manufactures-checkbox-input:checked:disabled + .manufactures-span-checkbox {
+  background: url("../img/checkbox-on-disabled.svg") no-repeat 0 0;
+}
+.filter-by-power-supply {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 22px;
+  padding-bottom: 37px;
+}
+.power-supply-span-radio {
+  position: absolute;
+  margin-left: -35px;
+  width: 25px;
+  height: 25px;
+  content: "";
+  background: url("../img/radio-off.svg") no-repeat 0 0;
+}
+.power-supply-radio-input:checked + .power-supply-span-radio {
+  background: url("../img/radio-on.svg") no-repeat 0 0;
+}
+.power-supply-radio-input:hover + .power-supply-span-radio,
+.power-supply-radio-input:focus + .power-supply-span-radio {
+  background: url("../img/radio-off-hover.svg") no-repeat 0 0;
+}
+.power-supply-radio-input:checked:hover + .power-supply-span-radio,
+.power-supply-radio-input:checked:focus + .power-supply-span-radio {
+  background: url("../img/radio-on-hover.svg") no-repeat 0 0;
+}
+
+.power-supply-radio-input:disabled + .power-supply-span-radio {
+  background: url("../img/radio-off-disabled.svg") no-repeat 0 0;
+}
+.power-supply-radio-input:checked:disabled + .power-supply-span-radio {
+  background: url("../img/radio-on-disabled.svg") no-repeat 0 0;
+}
+.power-supply-span-radio {
+  background: url("../img/radio-off.svg") no-repeat 0 0;
 }

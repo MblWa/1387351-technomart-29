@@ -143,18 +143,55 @@
               </div>
             </div>
           </fieldset>
-          <!-- Другие элементы формы -->
-        </form>
 
-        <div class="filter-by-manufactures">
-          <h4 class="filter-type-heading for-manufactures">ПРОИЗВОДИТЕЛИ:</h4>
-          <!-- Здесь будет форма фильтра -->
-        </div>
-        <div class="filter-by-power-supply">
-          <h4 class="filter-type-heading for-power-supply">ПИТАНИЕ:</h4>
-          <!-- Здесь будет форма фильтра -->
-        </div>
-        <button class="filter-show-button" type="button">ПОКАЗАТЬ</button>
+          <fieldset class="filter-items by-manufactures">
+            <legend class="filter-type-heading for-manufactures">ПРОИЗВОДИТЕЛИ:</legend>
+            <div class="filter-by-manufactures">
+              <label class="filter-by-manufactures-label">
+                <input type="checkbox" class="manufactures-checkbox-input" name="bosch" checked>
+                <span class="manufactures-span-checkbox"></span>
+                Bosch
+              </label>
+              <label class="filter-by-manufactures-label">
+                <input type="checkbox" class="manufactures-checkbox-input" name="interskol">
+                <span class="manufactures-span-checkbox"></span>
+                Интерскол
+              </label>
+              <label class="filter-by-manufactures-label">
+                <input type="checkbox" class="manufactures-checkbox-input" name="makita" checked>
+                <span class="manufactures-span-checkbox"></span>
+                Makita
+              </label>
+              <label class="filter-by-manufactures-label">
+                <input type="checkbox" class="manufactures-checkbox-input" name="dewalt">
+                <span class="manufactures-span-checkbox"></span>
+                Dewalt
+              </label>
+              <label class="filter-by-manufactures-label">
+                <input type="checkbox" class="manufactures-checkbox-input" name="hitachi">
+                <span class="manufactures-span-checkbox"></span>
+                Hitachi
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="filter-items by-power-supply">
+            <legend class="filter-type-heading for-power-supply">ПИТАНИЕ:</legend>
+            <div class="filter-by-power-supply">
+              <label class="filter-by-power-supply-label">
+                <input type="radio" class="power-supply-radio-input" name="accum" value="Аккумуляторные" checked>
+                <span class="power-supply-span-radio"></span>
+                Аккумуляторные
+              </label>
+              <label class="filter-by-power-supply-label">
+                <input type="radio" class="power-supply-radio-input" name="accum" value="Сетевые">
+                <span class="power-supply-span-radio"></span>
+                Сетевые
+              </label>
+            </div>
+          </fieldset>
+          <input type="submit" id="submit-filters-form" class="visually-hidden-elements">
+        </form>
+        <label class="filter-show-button" for="submit-filters-form">ПОКАЗАТЬ</label>
       </div>
 
       <div class="catalog-window">
