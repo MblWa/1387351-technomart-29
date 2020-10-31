@@ -1603,7 +1603,13 @@ ul {
   display: grid;
   grid-template-rows: 1fr min-content;
 }
-
+.modal-added-goods {
+  width: 620px;
+  height: 275px;
+  background-color: var(--basic-white);
+  display: grid;
+  grid-template-rows: 1fr min-content;
+}
 .modal-close-button {
   position: absolute;
   width: 21px;
@@ -1614,10 +1620,14 @@ ul {
   background-image: url("../img/icon-close.svg");
 }
 .modal-close-button.for-map {
-  top: 17px;
-  right: 10px;
+  top: 18px;
+  right: 11px;
 }
 .modal-close-button.for-feedback {
+  top: 21px;
+  right: 11px;
+}
+.modal-close-button.for-added-goods {
   top: 21px;
   right: 11px;
 }
@@ -1670,6 +1680,68 @@ ul {
   flex-direction: column;
   justify-content: center;
   background-color: var(--modal-feedback-footer-bg);
+}
+.modal-added-goods-footer {
+  padding: 37px 0;
+  display: flex;
+  justify-content: center;
+  grid-gap: 10px;
+  background-color: var(--modal-feedback-footer-bg);
+}
+.modal-added-goods-description {
+  font-family: "Cuprum", Arial, sans-serif;
+  color: var(--basic-black);
+  font-size: 24px;
+  line-height: 1.25em;
+  text-align: center;
+  position: relative;
+  padding: 66px 0 67px 0;
+}
+.modal-added-goods-description::before {
+  position: absolute;
+  content: "";
+  width: 66px;
+  height: 66px;
+  top: 48px;
+  left: 81px;
+  background: url("../img/icon-checked-goods.svg") no-repeat 0 0;
+}
+.modal-added-goods-gotocart-button,
+.modal-added-goods-close-button {
+  cursor: pointer;
+  border: none;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.28em;
+  text-align: center;
+  padding: 11px 0px 9px 0px;
+  text-transform: uppercase;
+  width: 192px;
+}
+
+.modal-added-goods-gotocart-button {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+.modal-added-goods-gotocart-button:hover,
+.modal-added-goods-gotocart-button:focus {
+  background-color: var(--slider-button-hover);
+}
+
+.modal-added-goods-gotocart-button:active {
+  background-color: var(--slider-button-click);
+}
+.modal-added-goods-close-button {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+.modal-added-goods-close-button:hover,
+.modal-added-goods-close-button:focus {
+  color: var(--basic-red);
+}
+
+.modal-added-goods-close-button:active {
+  color: var(--account-buttons-click);
 }
 .visually-hidden-elements {
   display: none;

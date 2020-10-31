@@ -407,12 +407,15 @@
       </div>
     </div>
   </footer>
-  <section class="modal modal-added-goods">
-    <h2>Окно добавления товара в корзину</h2>
-    <p class="modal-description">Товар добавлен в корзину</p>
-    <!-- Здесь будет форма добавления товара в корзину-->
-    <button class="modal-close-button" type="button">Закрыть</button>
+  <section class="modal modal-added-goods visually-hidden-elements">
+    <h2 class="visually-hidden-elements">Окно добавления товара в корзину</h2>
+    <p class="modal-added-goods-description">Товар добавлен в корзину!</p>
+    <div class="modal-added-goods-footer">
+      <button class="modal-added-goods-gotocart-button" type="button">Оформить заказ</button>
+      <button class="modal-added-goods-close-button" type="button">Продолжить покупки</button>
+    </div>
+    <button class="modal-close-button for-added-goods" type="button" aria-label="Закрыть"></button>
   </section>
 </body>
-
+<script src="js/added-goods-popup.js"></script>
 </html>

@@ -486,12 +486,16 @@
 
   <section class="modal modal-added-goods visually-hidden-elements">
     <h2 class="visually-hidden-elements">Окно добавления товара в корзину</h2>
-    <p class="modal-description">Товар добавлен в корзину!</p>
-    <!-- Здесь будет форма добавления товара в корзину-->
-    <button class="modal-close-button" type="button" aria-label="Закрыть"></button>
+    <p class="modal-added-goods-description">Товар добавлен в корзину!</p>
+    <div class="modal-added-goods-footer">
+      <button class="modal-added-goods-gotocart-button" type="button">Оформить заказ</button>
+      <button class="modal-added-goods-close-button" type="button">Продолжить покупки</button>
+    </div>
+    <button class="modal-close-button for-added-goods" type="button" aria-label="Закрыть"></button>
   </section>
 
   <script src="js/map.js"></script>
   <script src="js/feedback.js"></script>
+  <script src="js/added-goods-popup.js"></script>
 </body>
 </html>
