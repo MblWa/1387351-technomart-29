@@ -911,13 +911,16 @@ ul {
 .popular-goods-all-link:focus,
 .popular-manufactures-all-link:focus,
 .make-credit-request-link:hover,
-.make-credit-request-link:focus {
+.make-credit-request-link:focus,
+.modal-feedback-send-button:hover,
+.modal-feedback-send-button:focus {
   background-color: var(--slider-button-hover);
 }
 .slider-button-open-catalog:active,
 .popular-goods-all-link:active,
 .popular-manufactures-all-link:active,
-.make-credit-request-link:active {
+.make-credit-request-link:active,
+.modal-feedback-send-button:active {
   background-color: var(--slider-button-click);
 }
 /*popular goods*/
@@ -1618,6 +1621,15 @@ ul {
   cursor: pointer;
   background-color: transparent;
   background-image: url("../img/icon-close.svg");
+}
+.modal-close-button:hover,
+.modal-close-button:focus {
+  transition: 0.5s;
+  transform: rotate(90deg);
+  background-image: url("../img/icon-close.svg");
+}
+.modal-close-button:active {
+  background-image: url("../img/icon-close-active.svg");
 }
 .modal-close-button.for-map {
   top: 18px;
