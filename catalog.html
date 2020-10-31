@@ -119,10 +119,33 @@
 
       <div class="catalog-filters">
         <h3 class="filters-heading">ФИЛЬТР:</h3>
-        <div class="filter-by-price">
-          <h4 class="filter-type-heading for-price">ЦЕНА:</h4>
-          <!-- Здесь будет форма фильтра -->
-        </div>
+        <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="filter-items by-price">
+            <legend class="filter-type-heading for-price">ЦЕНА:</legend>
+            <div class="filter-by-price">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+              <div class="price-controls">
+                <label class="price-controls-label min-price">
+                  <input type="number" class="price-controls-input" name="min-price" value="0">
+                </label>
+                <p class="range-decorative-element">
+                  —
+                </p>
+                <label class="price-controls-label max-price">
+                  <input type="number" class="price-controls-input" name="max-price" value="30000">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <!-- Другие элементы формы -->
+        </form>
+
         <div class="filter-by-manufactures">
           <h4 class="filter-type-heading for-manufactures">ПРОИЗВОДИТЕЛИ:</h4>
           <!-- Здесь будет форма фильтра -->

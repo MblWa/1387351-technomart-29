@@ -145,6 +145,10 @@
   --services-item-shadow1: #293449;
   --services-item-shadow2: #405069;
   --modal-feedback-footer-bg: #F4F4F4;
+  --range-input-scale: #D7DCDE;
+  --range-input-scale-active: #00CA74;
+  --range-input-toggle-bg: #ABABAB;
+  --range-input-toggle-shadow: #CFCFCF;
 }
 
 body {
@@ -1469,6 +1473,7 @@ ul {
   font-size: 17px;
   line-height: 1.76em;
   font-weight: 700;
+  text-transform: uppercase;
 }
 .filter-type-heading.for-price {
   padding: 14.15px 0 10.85px 0;
@@ -1761,4 +1766,79 @@ ul {
 .modal-show {
   display: block;
   animation: bounce 0.6s;
+}
+/*Фильтры каталога*/
+.filter-items {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.range-controls {
+  height: 41px;
+  border-radius: 5px;
+  background-color: var(--catalog-filters-bg);
+  margin-bottom: 9px;
+  padding: 39px 20px 0 20px;
+  position: relative;
+}
+.range-controls .scale {
+  height: 2px;
+  background: var(--range-input-scale);
+}
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: var(--range-input-scale-active);
+}
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--range-input-toggle-bg);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--range-input-toggle-shadow);
+  cursor: pointer;
+}
+.range-controls .toggle-min {
+  left: 18px;
+}
+.range-controls .toggle-max {
+  left: 160px;
+}
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--goods-bg-border);
+}
+.price-controls-label {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.125em;
+}
+.range-decorative-element {
+  font-size: 16px;
+  line-height: 1.125em;
+  align-self: center;
+}
+.price-controls-input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background-color: var(--catalog-filters-bg);
+  width: 75px;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  -moz-appearance: textfield; /* Firefox */
+}
+.price-controls-input::-webkit-outer-spin-button,
+.price-controls-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
