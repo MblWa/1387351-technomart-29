@@ -171,10 +171,10 @@ img {
   max-width: 100%;
   height: auto;
 }
-button {
-  outline: none;/*обнуление поведения Chrome*/
-}
-input {
+
+button:focus,
+input:focus,
+a:focus {
   outline: none; /*обнуление поведения Chrome*/
 }
 *, *::before, *::after {
@@ -1031,13 +1031,13 @@ ul {
   padding: 10px 40px 10px 53px;
 }
 .popular-goods-item:hover,
-.popular-manufactures-item:hover,
+.popular-manufactures-item-link:hover,
 .popular-goods-item:focus,
-.popular-manufactures-item:focus {
+.popular-manufactures-item-link:focus {
   box-sizing: content-box;
   box-shadow: 0px 4px 20px var(--popular-goods-n-manuf-shadow);
 }
-.popular-manufactures-item:active {
+.popular-manufactures-item-link:active {
   opacity: 0.5;
 }
 .popular-goods-item {
@@ -1767,7 +1767,6 @@ ul {
 }
 .modal-show {
   display: block;
-  animation: bounce 0.6s;
 }
 .visually-hidden {
   position: absolute;
