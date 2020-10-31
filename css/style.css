@@ -1277,12 +1277,11 @@ ul {
 }
 .contacts-description {
   width: 180px;
-  padding-bottom: 32px;
+  padding-bottom: 31px;
 }
-.contacts-map-image {
-  margin-bottom: 23px;
+.contacts-map-link {
+  margin-bottom: 17px;
   align-self: flex-end;
-  cursor: pointer;
 }
 .about-company-link,
 .contact-us-link {

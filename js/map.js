@@ -1,4 +1,4 @@
-const mapLink = document.querySelector(".contacts-map-image");
+const mapLink = document.querySelector(".contacts-map-link");
 const mapPopup = document.querySelector(".modal-map");
 const mapClose = mapPopup.querySelector(".modal-close-button");
 
