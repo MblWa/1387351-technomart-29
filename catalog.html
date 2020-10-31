@@ -132,12 +132,12 @@
               </div>
               <div class="price-controls">
                 <label class="price-controls-label min-price">
-                  <input type="number" class="price-controls-input" name="min-price" value="0">
+                  <input type="number" class="price-controls-input" name="min-price" value="0" aria-label="Минимальная цена продукции при поиске">
                 </label>
                 <p class="range-decorative-element">
                   —
                 </p>
-                <label class="price-controls-label max-price">
+                <label class="price-controls-label max-price" aria-label="Максимальная цена продукции при поиске">
                   <input type="number" class="price-controls-input" name="max-price" value="30000">
                 </label>
               </div>
@@ -148,27 +148,27 @@
             <legend class="filter-type-heading for-manufactures">ПРОИЗВОДИТЕЛИ:</legend>
             <div class="filter-by-manufactures">
               <label class="filter-by-manufactures-label">
-                <input type="checkbox" class="manufactures-checkbox-input" name="bosch" checked>
+                <input type="checkbox" class="manufactures-checkbox-input" name="bosch" aria-label="Выбрать продукцию компании Бош" checked>
                 <span class="manufactures-span-checkbox"></span>
                 Bosch
               </label>
               <label class="filter-by-manufactures-label">
-                <input type="checkbox" class="manufactures-checkbox-input" name="interskol">
+                <input type="checkbox" class="manufactures-checkbox-input" name="interskol" aria-label="Выбрать продукцию компании Интерскол">
                 <span class="manufactures-span-checkbox"></span>
                 Интерскол
               </label>
               <label class="filter-by-manufactures-label">
-                <input type="checkbox" class="manufactures-checkbox-input" name="makita" checked>
+                <input type="checkbox" class="manufactures-checkbox-input" name="makita" aria-label="Выбрать продукцию компании Макита" checked>
                 <span class="manufactures-span-checkbox"></span>
                 Makita
               </label>
               <label class="filter-by-manufactures-label">
-                <input type="checkbox" class="manufactures-checkbox-input" name="dewalt">
+                <input type="checkbox" class="manufactures-checkbox-input" name="dewalt" aria-label="Выбрать продукцию компании Девальт">
                 <span class="manufactures-span-checkbox"></span>
                 Dewalt
               </label>
               <label class="filter-by-manufactures-label">
-                <input type="checkbox" class="manufactures-checkbox-input" name="hitachi">
+                <input type="checkbox" class="manufactures-checkbox-input" name="hitachi" aria-label="Выбрать продукцию компании Хитачи">
                 <span class="manufactures-span-checkbox"></span>
                 Hitachi
               </label>
@@ -178,18 +178,18 @@
             <legend class="filter-type-heading for-power-supply">ПИТАНИЕ:</legend>
             <div class="filter-by-power-supply">
               <label class="filter-by-power-supply-label">
-                <input type="radio" class="power-supply-radio-input" name="accum" value="Аккумуляторные" checked>
+                <input type="radio" class="power-supply-radio-input" name="accum" value="Аккумуляторные" aria-label="Выбрать товары с аккумулятором" checked>
                 <span class="power-supply-span-radio"></span>
                 Аккумуляторные
               </label>
               <label class="filter-by-power-supply-label">
-                <input type="radio" class="power-supply-radio-input" name="accum" value="Сетевые">
+                <input type="radio" class="power-supply-radio-input" name="accum" value="Сетевые" aria-label="Выбрать товары с питанием от сети">
                 <span class="power-supply-span-radio"></span>
                 Сетевые
               </label>
             </div>
           </fieldset>
-          <input type="submit" id="submit-filters-form" class="visually-hidden-elements">
+          <input type="submit" id="submit-filters-form" class="visually-hidden-elements" aria-label="Показать выбранные товары согласно фильтру">
         </form>
         <label class="filter-show-button" for="submit-filters-form">ПОКАЗАТЬ</label>
       </div>
