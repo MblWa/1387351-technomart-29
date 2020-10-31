@@ -172,9 +172,11 @@ img {
   height: auto;
 }
 button {
-  outline: none;
+  outline: none;/*обнуление поведения Chrome*/
 }
-
+input {
+  outline: none; /*обнуление поведения Chrome*/
+}
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -450,7 +452,6 @@ button {
   color: var(--basic-white);
   font-size: 18px;
   line-height: 1.33em;
-  outline: none;
 }
 .search-bar-input {
   flex-grow: 1;
@@ -1201,7 +1202,6 @@ ul {
 }
 .services-button {
   background-color: transparent;
-  outline: none;
   border: none;
   color: var(--basic-white);
   font-family: "Cuprum", Arial, sans-serif;
@@ -1681,7 +1681,6 @@ ul {
   box-sizing: border-box;
   border-radius: 2px;
   padding: 5px 0 5px 12px;
-  outline: none;
 }
 .textfield-feedback-input {
   width: 460px;
