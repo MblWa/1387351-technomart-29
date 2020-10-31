@@ -37,7 +37,7 @@
         </a>
         <form class="search-bar" id="search-form" method="get">
           <input class="search-bar-input" type="search" id="query" name="q" placeholder="Поиск:">
-          <button class="search-bar-button"></button>
+          <button class="search-bar-button" aria-label="Кнопка поиска по сайту Техномарт"></button>
         </form>
         <a class="bookmarks-link" href="">Закладки: 0</a>
         <a class="cart-link" href="">Корзина: 0</a>
@@ -151,8 +151,8 @@
         <ul class="popular-goods-list">
           <li class="popular-goods-item">
             <div class="popular-goods-image">
-              <button class="popular-goods-buy-button" type="button">КУПИТЬ</button>
-              <button class="popular-goods-bookmarks-button" type="button">В ЗАКЛАДКИ</button>
+              <button class="popular-goods-buy-button" type="button" aria-label="Купить перфоратор BOSCH BFG 9000">КУПИТЬ</button>
+              <button class="popular-goods-bookmarks-button" type="button" aria-label="Добавить в закладки перфоратор BOSCH BFG 9000">В ЗАКЛАДКИ</button>
               <div class="popular-goods-image-bg">
                 <img class="popular-goods-item-pic" src="img/BFG_9000.png" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
               </div>
@@ -163,8 +163,8 @@
           </li>
           <li class="popular-goods-item new-item">
             <div class="popular-goods-image">
-              <button class="popular-goods-buy-button" type="button">КУПИТЬ</button>
-              <button class="popular-goods-bookmarks-button" type="button">В ЗАКЛАДКИ</button>
+              <button class="popular-goods-buy-button" type="button" aria-label="Купить перфоратор BOSCH BFG 3000">КУПИТЬ</button>
+              <button class="popular-goods-bookmarks-button" type="button" aria-label="Добавить в закладки перфоратор BOSCH BFG 3000">В ЗАКЛАДКИ</button>
               <div class="popular-goods-image-bg">
                 <img class="popular-goods-item-pic" src="img/BFG_3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
               </div>
@@ -175,8 +175,8 @@
           </li>
           <li class="popular-goods-item">
             <div class="popular-goods-image">
-              <button class="popular-goods-buy-button" type="button">КУПИТЬ</button>
-              <button class="popular-goods-bookmarks-button" type="button">В ЗАКЛАДКИ</button>
+              <button class="popular-goods-buy-button" type="button" aria-label="Купить перфоратор BOSCH BFG 6000">КУПИТЬ</button>
+              <button class="popular-goods-bookmarks-button" type="button" aria-label="Добавить в закладки перфоратор BOSCH BFG 6000">В ЗАКЛАДКИ</button>
               <div class="popular-goods-image-bg">
                 <img class="popular-goods-item-pic" src="img/BFG_6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </div>
@@ -187,8 +187,8 @@
           </li>
           <li class="popular-goods-item new-item">
             <div class="popular-goods-image">
-              <button class="popular-goods-buy-button" type="button">КУПИТЬ</button>
-              <button class="popular-goods-bookmarks-button" type="button">В ЗАКЛАДКИ</button>
+              <button class="popular-goods-buy-button" type="button" aria-label="Купить перфоратор BOSCH BFG 2000">КУПИТЬ</button>
+              <button class="popular-goods-bookmarks-button" type="button" aria-label="Добавить в закладки перфоратор BOSCH BFG 2000">В ЗАКЛАДКИ</button>
               <div class="popular-goods-image-bg">
                 <img class="popular-goods-item-pic" src="img/BFG_2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
               </div>
@@ -262,13 +262,13 @@
           <div class="services-slider-n-description">
             <ul class="services-list">
               <li class="services-item services-item-active">
-                <button class="services-button services-button-active" type="button" disabled >Доставка</button>
+                <button class="services-button services-button-active" type="button" aria-label="Кнопка выбора слайда с информацией о доставке" disabled>Доставка</button>
               </li>
               <li class="services-item">
-                <button class="services-button" type="button">Гарантия</button>
+                <button class="services-button" type="button" aria-label="Кнопка выбора слайда с информацией о гарантии">Гарантия</button>
               </li>
               <li class="services-item">
-                <button class="services-button" type="button">Кредит</button>
+                <button class="services-button" type="button" aria-label="Кнопка выбора слайда с информацией о кредите">Кредит</button>
               </li>
             </ul>
             <ul class="services-slider-list">
@@ -451,7 +451,7 @@
   <section class="modal modal-map visually-hidden-elements">
     <h2 class="visually-hidden">Как до нас добраться</h2>
       <iframe class="frame-for-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="943" height="442" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
-    <button class="modal-close-button for-map" type="button" aria-label="Закрыть"></button>
+    <button class="modal-close-button for-map" type="button" aria-label="Закрыть карту и вернуться к сайту"></button>
   </section>
 
   <section class="modal modal-feedback visually-hidden-elements">
@@ -471,19 +471,19 @@
       </p>
     </form>
     <div class="modal-feedback-footer">
-      <button class="modal-feedback-send-button" type="submit" form="feedback-form-id">Отправить</button>
+      <button class="modal-feedback-send-button" type="submit" form="feedback-form-id" aria-label="Кнопка отправки формы отзыва">Отправить</button>
     </div>
-    <button class="modal-close-button for-feedback" type="button" aria-label="Закрыть"></button>
+    <button class="modal-close-button for-feedback" type="button" aria-label="Закрыть" aria-label="Кнопка закрытия окна обратной связи"></button>
   </section>
 
   <section class="modal modal-added-goods visually-hidden-elements">
     <h2 class="visually-hidden">Окно подтверждения добавления товара в корзину</h2>
     <p class="modal-added-goods-description">Товар добавлен в корзину!</p>
     <div class="modal-added-goods-footer">
-      <button class="modal-added-goods-gotocart-button" type="button">Оформить заказ</button>
-      <button class="modal-added-goods-close-button" type="button">Продолжить покупки</button>
+      <button class="modal-added-goods-gotocart-button" type="button" aria-label="Кнопка для завершения выбора товаров и перемещния в корзину для оформления товаров">Оформить заказ</button>
+      <button class="modal-added-goods-close-button" type="button" aria-label="Кнопка закрытия окна и возвращению к сайту и товарам">Продолжить покупки</button>
     </div>
-    <button class="modal-close-button for-added-goods" type="button" aria-label="Закрыть"></button>
+    <button class="modal-close-button for-added-goods" type="button" aria-label="Закрыть" aria-label="Закрыть окно подтверждения покупки и продолжить покупки"></button>
   </section>
 
   <script src="js/map.js"></script>
