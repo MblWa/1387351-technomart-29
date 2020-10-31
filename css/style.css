@@ -1858,6 +1858,7 @@ ul {
   padding-left: 35px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .manufactures-checkbox-input,
 .power-supply-radio-input {
