@@ -332,7 +332,7 @@ a:focus {
   grid-template-columns: 1fr min-content;
   grid-gap: 20px;
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 69px;
 }
 .page-footer {
   display: grid;
@@ -415,28 +415,34 @@ a:focus {
   grid-template-columns: 3fr 5fr 1fr;
   grid-gap: 20px;
 }
-.sorting-list,
-.sorting-heading,
+
 .sorting-buttons {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.sorting-list {
+  display: flex;
+  padding: 5px 0 0 0;
 }
 .sorting-item:first-child {
+  padding-left: 2px;
   padding-right: 70px;
 }
 .sorting-item:nth-child(2) {
-  padding-right: 68px;
+  padding-right: 65px;
 }
 .sorting-button-up {
+  padding-left: 10px;
   margin-right: 21px;
 }
 .page-navigation-list {
   display: flex;
-  grid-gap: 10px;
+  grid-gap: 9px;
 }
 .catalog-of-sorted-items {
   padding-top: 28px;
-  padding-bottom: 58px;
+  padding-bottom: 46px;
 }
 /*header*/
 .main-header {
@@ -478,7 +484,10 @@ a:focus {
   color: var(--basic-white);
 }
 .bookmarks-link {
-  padding: 10px 25px 9px 43px;
+  padding: 10px 10px 9px 0;
+  flex-basis: 150px;
+  text-align: center;
+  box-sizing: border-box;
 }
 .bookmarks-link,
 .cart-link,
@@ -489,7 +498,7 @@ a:focus {
   content: "";
   position: absolute;
   top: 13px;
-  left: 21px;
+  left: 6px;
   width: 14px;
   height: 16px;
   background-image: url("../img/icon-bookmark.svg");
@@ -505,13 +514,16 @@ a:focus {
   opacity: 0.3;
 }
 .cart-link {
-  padding: 10px 27px 9px 49px;
+  flex-basis: 136px;
+  text-align: center;
+  padding: 10px 0 9px 8px;
+  box-sizing: border-box;
 }
 .cart-link::before {
   content: "";
   position: absolute;
   top: 13px;
-  left: 26px;
+  left: 12px;
   width: 15px;
   height: 15px;
   background-image: url("../img/icon-cart.svg");
@@ -574,8 +586,9 @@ a:focus {
   color: var(--basic-white-transparent05);
 }
 
-.added-goods-to-cart {
+.cart-link.added-goods-to-cart {
   background-color: var(--basic-red);
+  padding: 10px 0 9px 11px;
 }
 .main-header-middle-bar-content {
   background-color: transparent;
@@ -650,7 +663,7 @@ a:focus {
 }
 .account-username {
   grid-area: a;
-  padding: 12px 0 12px 56px;
+  padding: 12px 0 12px 58px;
 }
 .account-username::before {
   content: "";
@@ -721,16 +734,16 @@ a:focus {
 .account-orders-link {
   grid-area: b;
   text-align: right;
-  margin-right: 13px;
+  margin-right: 14px;
 }
 .account-user-acc-link {
   grid-area: c;
-  margin-left: 13px;
+  margin-left: 14px;
 }
 .account-decorative-dot {
   grid-area: dot;
   display: flex;
-  padding-top: 7.5px;
+  padding-top: 7px;
 }
 .decorative-dot-svg {
   fill: var(--after-login-account-color);
@@ -1168,7 +1181,7 @@ ul {
   padding: 64px 0 25px 0;
 }
 .services-description {
-  padding-bottom: 70px;
+  padding-bottom: 72px;
 }
 .services-slider-list {
 
@@ -1178,13 +1191,13 @@ ul {
 }
 
 .services-slider-item.delivery-slide {
-   background: url("../img/logistics-car.svg") no-repeat bottom 2px right 0px;
+   background: url("../img/logistics-car.svg") no-repeat bottom 0px right 0px;
  }
  .services-slider-item.guarantee-slide {
-    background: url("../img/guarantee.png") no-repeat bottom 2px right 0px;
+    background: url("../img/guarantee.png") no-repeat bottom 0px right 0px;
   }
   .services-slider-item.credit-slide {
-     background: url("../img/credit-slide.png") no-repeat bottom 2px right 0px;
+     background: url("../img/credit-slide.png") no-repeat bottom 0px right 0px;
    }
 .services-slider-item-heading {
   font-family: "Cuprum", Arial, sans-serif;
@@ -1193,6 +1206,7 @@ ul {
   font-size: 30px;
   line-height: 1em;
   padding-bottom: 30px;
+  margin-top: -3px;
   text-transform: uppercase;
 }
 .services-slider-item-description {
@@ -1202,7 +1216,7 @@ ul {
   padding-bottom: 36px;
 }
 .services-list {
-  padding-bottom: 99px;
+  padding-bottom: 97px;
   position: relative;
 }
 .services-list::before {
@@ -1211,7 +1225,7 @@ ul {
   width: 10px;
   height: 279px;
   right: 0;
-  bottom: 50px;
+  bottom: 52px;
   background-image: url("../img/slider-shadow-features.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1268,7 +1282,7 @@ ul {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 1.33em;
-  padding-bottom: 8px;
+  padding-bottom: 9px;
 }
 .about-description-content {
   padding-left: 37px;
@@ -1294,7 +1308,7 @@ ul {
 
 .about-description {
   width: 460px;
-  padding-bottom: 24px;
+  padding-bottom: 26px;
 }
 .about-description:last-of-type {
   padding-bottom: 1px;
@@ -1305,10 +1319,10 @@ ul {
 }
 .contacts-description {
   width: 180px;
-  padding-bottom: 31px;
+  padding-bottom: 32px;
 }
 .contacts-map-link {
-  margin-bottom: 17px;
+  margin-bottom: 19px;
   align-self: flex-end;
 }
 .about-company-link,
@@ -1322,7 +1336,7 @@ ul {
   text-align: center;
   width: 220px;
   padding-top: 11px;
-  padding-bottom: 9px;
+  padding-bottom: 10px;
 }
 .contact-us-link {
   align-self: flex-end;
@@ -1353,10 +1367,14 @@ ul {
 .footer-about-company {
   padding-bottom: 54px;
 }
+.footer-contacts {
+  padding-left: 3px;
+}
 .footer-contacts,
 .footer-contacts a {
   color: var(--footer-address-font);
   margin-top: 16px;
+
   width: 321px;
 }
 
@@ -1401,6 +1419,7 @@ ul {
   padding-left: 69px;
 }
 .social-networks-item {
+  padding-top: 8px;
   width: 44px;
 }
 .social-networks-link {
@@ -1494,7 +1513,10 @@ ul {
   font-size: 13px;
   line-height: 1.38em;
   font-weight: 400;
-  padding: 10px 0 10px 18px;
+  padding: 9px 0 11px 18px;
+}
+.sorting-heading {
+  padding-left: 20px;
 }
 .filter-type-heading {
   font-size: 17px;
@@ -1503,13 +1525,13 @@ ul {
   text-transform: uppercase;
 }
 .filter-type-heading.for-price {
-  padding: 14.15px 0 10.85px 0;
+  padding: 12.5px 0 12px 0;
 }
 .filter-type-heading.for-manufactures {
-  padding: 16px 0 15px 0;
+  padding: 14px 0 18px 0;
 }
 .filter-type-heading.for-power-supply {
-  padding: 18px 0 21px 0;
+  padding: 17px 0 24px 0;
 }
 .filter-show-button {
   display: block;
@@ -1521,7 +1543,7 @@ ul {
   line-height: 1.38em;
   cursor: pointer;
   border: 1px solid var(--catalog-filter-show-button-shadow);
-  padding: 10px 0;
+  padding: 8px 0 10px 0;
 }
 .filter-show-button:hover,
 .filter-show-button:focus {
@@ -1613,7 +1635,7 @@ ul {
   color: var(--basic-white);
 }
 .few-words-about-content {
-  padding-bottom: 67px;
+  padding-bottom: 70px;
 }
 /* Модальные окна */
 .modal {
@@ -1831,7 +1853,7 @@ ul {
 }
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 30px;
   left: 0;
   width: 4px;
   height: 4px;
@@ -1851,7 +1873,7 @@ ul {
 .price-controls {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 25px;
+  padding-bottom: 23px;
   border-bottom: 1px solid var(--goods-bg-border);
 }
 .price-controls-label {
@@ -1862,7 +1884,7 @@ ul {
 .range-decorative-element {
   font-size: 16px;
   line-height: 1.125em;
-  align-self: center;
+  padding-top: 8px;
 }
 .price-controls-input {
   font-family: inherit;
@@ -1870,7 +1892,7 @@ ul {
   line-height: inherit;
   background-color: var(--catalog-filters-bg);
   width: 75px;
-  padding: 10px;
+  padding: 8px 10px 12px 10px;
   text-align: center;
   border: none;
   border-radius: 5px;
@@ -1885,7 +1907,7 @@ ul {
   display: flex;
   flex-direction: column;
   grid-gap: 20px;
-  padding-bottom: 27px;
+  padding-bottom: 29px;
   border-bottom: 1px solid var(--goods-bg-border);
 }
 .filter-by-manufactures-label,
