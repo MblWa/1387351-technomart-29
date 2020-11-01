@@ -150,6 +150,9 @@
   --range-input-scale-active: #00CA74;
   --range-input-toggle-bg: #ABABAB;
   --range-input-toggle-shadow: #CFCFCF;
+  --telephone-bg: #B7BFC8;
+  --telephone-bg07: rgba(183,	191,	200, 0.7);
+  --telephone-bg0: rgba(183,	191,	200, 0);
 }
 
 body {
@@ -172,11 +175,11 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+/*обнуление поведения Chrome и замена фокуса на дизайнерские по макету*/
 button:focus,
 input:focus,
 a:focus {
-  outline: none; /*обнуление поведения Chrome*/
+  outline: none;
 }
 *, *::before, *::after {
   margin: 0;
@@ -463,8 +466,13 @@ a:focus {
 .search-bar {
   background-color: var(--header-bar-background);
   flex-grow: 1;
+  flex-basis: auto;
+  display: flex;
 }
-
+.search-bar-label {
+  flex-grow: 1;
+  display: flex;
+}
 .search-bar-input,
 .bookmarks-link,
 .cart-link,
@@ -537,10 +545,7 @@ a:focus {
 .cart-link:active::before {
   opacity: 0.3;
 }
-.search-bar {
-  flex-basis: auto;
-  display: flex;
-}
+
 .search-bar-button {
   order: -1;
   background-color: var(--header-bar-background);
@@ -589,6 +594,9 @@ a:focus {
   background-color: var(--basic-red);
   padding: 10px 0 9px 11px;
 }
+.bookmarks-link.added-goods-to-bookmarks {
+  background-color: var(--basic-red);
+}
 .main-header-middle-bar-content {
   background-color: transparent;
 }
@@ -625,7 +633,13 @@ a:focus {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-
+.middle-bar-contacts-telephone-link:hover::before,
+.middle-bar-contacts-telephone-link:focus::before {
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 var(--telephone-bg);
+  /*animation: shake 1s infinite;*/
+  animation: pulse-telephone 1s infinite;
+}
 .middle-bar-contacts-address {
   color: var(--header-address-color);
   font-size: 14px;
@@ -1182,9 +1196,7 @@ ul {
 .services-description {
   padding-bottom: 72px;
 }
-.services-slider-list {
 
-}
 .services-slider-item {
   height: 100%;
 }
@@ -1370,7 +1382,7 @@ ul {
   padding-left: 3px;
 }
 .footer-contacts,
-.footer-contacts a {
+.footer-contacts-telephone-link {
   color: var(--footer-address-font);
   margin-top: 16px;
 
@@ -1383,9 +1395,9 @@ ul {
 .footer-navigation-second-row-link {
   color: var(--footer-menu-secondrow-font);
 }
-.footer-contacts a:hover,
+.footer-contacts-telephone-link:hover,
 .footer-navigation-first-row-link:hover,
-.footer-contacts a:focus,
+.footer-contacts-telephone-link:focus,
 .footer-navigation-first-row-link:focus {
   text-decoration: underline;
 }
@@ -1393,7 +1405,7 @@ ul {
 .footer-navigation-second-row-link:focus {
   text-decoration: underline;
 }
-.footer-contacts a:active,
+.footer-contacts-telephone-link:active,
 .footer-navigation-first-row-link:active {
   opacity: 0.5;
   text-decoration: none;
@@ -1990,7 +2002,11 @@ ul {
 .power-supply-span-radio {
   background: url("../img/radio-off.svg") no-repeat 0 0;
 }
-
+.name-feedback-input:focus,
+.email-feedback-input:focus,
+.textfield-feedback-input:focus {
+  border: 2px solid var(--bookmarks-bg-hover);
+}
 /* Animations */
 @keyframes bounce {
   0% {
@@ -2030,4 +2046,21 @@ ul {
   80% {
     transform: translateX(10px);
   }
+}
+
+@keyframes pulse-telephone {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 var(--telephone-bg07);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px var(--telephone-bg0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 var(--telephone-bg0);
+    }
 }

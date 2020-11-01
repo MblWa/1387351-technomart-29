@@ -36,7 +36,9 @@
           </svg>
         </a>
         <form class="search-bar" id="search-form" method="get">
-          <input class="search-bar-input" type="search" id="query" name="q" placeholder="Поиск:">
+          <label class="search-bar-label" aria-label="Поиск по сайту Техномарт">
+            <input class="search-bar-input" type="search" id="query" name="q" placeholder="Поиск:">
+          </label>
           <button class="search-bar-button" aria-label="Кнопка поиска по сайту Техномарт"></button>
         </form>
         <a class="bookmarks-link" href="" aria-label="Раздел личного кабинета с товарами, добавленными в закладки">Закладки: 0</a>
@@ -343,7 +345,7 @@
         <a class="contacts-map-link" href="" aria-label="Открыть интерактивную карту с адресом компании Техномарт">
           <img class="contacts-map-image" src="img/map.png" width="300" height="158" alt="Карта с адресом компании ТЕХНОМАРТ">
         </a>
-        <a class="contact-us-link" href="" aria-label="Открыть окно с формой обратной связи">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+        <a class="contact-us-link" href="writeus.html" aria-label="Открыть окно с формой обратной связи">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
       </section>
     </div>
   </main>
@@ -376,7 +378,7 @@
           </a>
           <p class="footer-contacts">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            <a href="tel:+78125550555" aria-label="Контактный телефон компании Техномарт">+7 (812) 555-05-55</a>
+            <a class="footer-contacts-telephone-link" href="tel:+78125550555" aria-label="Контактный телефон компании Техномарт">+7 (812) 555-05-55</a>
           </p>
         </section>
         <section class="footer-navigation">
@@ -464,15 +466,15 @@
     <h2 class="visually-hidden">Напишите нам!</h2>
     <form class="feedback-form" id="feedback-form-id" action="https://echo.htmlacademy.ru" method="post">
       <p class="feedback-text-block">
-        <label class="modal-label-heading" for="name-feedback">Ваше имя:</label>
+        <label class="modal-label-heading" for="name-feedback" aria-label="Введите ваше имя">Ваше имя:</label>
         <input class="name-feedback-input" id="name-feedback" type="text" name="name-feedback" placeholder="Имя Фамилия">
       </p>
       <p class="feedback-text-block">
-        <label class="modal-label-heading" for="email-feedback">Ваш e-mail:</label>
+        <label class="modal-label-heading" for="email-feedback" aria-label="Введите ваш e-mail">Ваш e-mail:</label>
         <input class="email-feedback-input" id="email-feedback" type="email" name="email-feedback" placeholder="email@example.com">
       </p>
       <p class="feedback-text-block">
-        <label class="modal-label-heading" for="textfield-feedback">Текст письма:</label>
+        <label class="modal-label-heading" for="textfield-feedback" aria-label="Введите текст письма">Текст письма:</label>
         <textarea class="textfield-feedback-input" cols="40" rows="5" id="textfield-feedback" name="textfield-feedback" placeholder="В свободной форме"></textarea>
       </p>
     </form>
