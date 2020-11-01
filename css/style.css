@@ -259,12 +259,11 @@ a:focus {
   grid-gap: 10px;
 }
 .slider-navigation-button-dot {
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
   background-color: var(--basic-white);
   border: solid 2px var(--basic-white);
   border-radius: 50%;
-  cursor: pointer;
 }
 .slider-navigation-button-dot.selected-slide {
   background-color: var(--basic-red);
