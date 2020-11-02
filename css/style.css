@@ -212,6 +212,7 @@ a:focus {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -220,8 +221,8 @@ a:focus {
   padding-top: 59px;
   display: grid;
   grid-template-columns: repeat(3, 300px);
-  grid-template-rows: repeat(3, 123px);
   grid-gap: 20px;
+  grid-auto-flow: row;
 }
 .catalog-list-item-slider {
   grid-column: 1 / span 2;
@@ -304,7 +305,6 @@ a:focus {
 }
 .popular-manufactures {
   display: grid;
-  grid-template-rows: 89px 310px;
   grid-gap: 20px;
   padding: 70px 0;
 }
@@ -312,8 +312,10 @@ a:focus {
 .popular-manufactures-list {
   display: grid;
   grid-template-columns: repeat(4, 220px);
-  grid-template-rows: 145px 145px;
   grid-gap: 20px;
+}
+.popular-manufactures-item {
+  height: 145px;
 }
 .popular-manufactures-item-link {
   height: 100%;
@@ -346,12 +348,14 @@ a:focus {
 
 .footer-navigation-first-row-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   grid-gap: 59px;
   padding-top: 37px;
 }
 .footer-navigation-second-row-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   grid-gap: 59px;
   padding-top: 34px;
@@ -364,6 +368,7 @@ a:focus {
 
 .catalog-nav-breadcrumbs-list {
   display: flex;
+  flex-wrap: wrap;
 }
 .catalog-breadcrumbs {
   position: relative;
@@ -425,7 +430,11 @@ a:focus {
 }
 .sorting-list {
   display: flex;
+  flex-wrap: wrap;
   padding: 5px 0 0 0;
+}
+.sorting-item {
+  padding-right: 20px;
 }
 .sorting-item:first-child {
   padding-left: 2px;
@@ -434,12 +443,16 @@ a:focus {
 .sorting-item:nth-child(2) {
   padding-right: 65px;
 }
+.sorting-item:nth-child(3) {
+  padding-right: 0px;
+}
 .sorting-button-up {
   padding-left: 10px;
   margin-right: 21px;
 }
 .page-navigation-list {
   display: flex;
+  flex-wrap: wrap;
   grid-gap: 9px;
 }
 .catalog-of-sorted-items {
@@ -824,6 +837,7 @@ ul {
 .catalog-list-item {
   font-family: "Cuprum", Arial, sans-serif;
   position: relative;
+  background-color: var(--basic-black);
 }
 .catalog-list-item:nth-child(1) {
   background-color: var(--catalog-bg-item-yellow);
@@ -878,6 +892,7 @@ ul {
   margin-left: 23px;
   text-align: center;
   padding: 10px 0;
+  margin-bottom: 21px;
   width: 135px;
 }
 .catalog-button:hover,
@@ -1202,13 +1217,13 @@ ul {
 }
 
 .services-slider-item.delivery-slide {
-   background: url("../img/logistics-car.svg") no-repeat bottom 0px right 0px;
+   background: url("../img/logistics-car.svg") no-repeat top 21px right 1px;
  }
  .services-slider-item.guarantee-slide {
-    background: url("../img/guarantee.png") no-repeat bottom 0px right 0px;
+    background: url("../img/guarantee.png") no-repeat top 21px right 1px;
   }
   .services-slider-item.credit-slide {
-     background: url("../img/credit-slide.png") no-repeat bottom 0px right 0px;
+     background: url("../img/credit-slide.png") no-repeat top 21px right 1px;
    }
 .services-slider-item-heading {
   font-family: "Cuprum", Arial, sans-serif;
@@ -1227,7 +1242,7 @@ ul {
   padding-bottom: 36px;
 }
 .services-list {
-  padding-bottom: 97px;
+  margin-bottom: 97px;
   position: relative;
 }
 .services-list::before {
@@ -1236,7 +1251,7 @@ ul {
   width: 10px;
   height: 279px;
   right: 0;
-  bottom: 52px;
+  top: -50px;
   background-image: url("../img/slider-shadow-features.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
