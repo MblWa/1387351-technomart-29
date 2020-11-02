@@ -213,7 +213,7 @@ a:focus {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -254,7 +254,16 @@ a:focus {
   background-position: 0 0;
 }
 .slider-navigation-button.right-nav-but {
-  background-image: url("../img/icon-right.svg");
+  transform:rotate(180deg);
+}
+.slider-navigation-button:hover:not(:disabled),
+.slider-navigation-button:focus {
+  background-image: url("../img/icon-left-focus.svg");
+}
+.slider-navigation-button:disabled {
+  opacity: 0.4;
+  cursor: default;
+  background-image: url("../img/icon-left.svg");
 }
 .slider-navigation-buttons-dots {
   margin-top: 58px;
@@ -619,7 +628,7 @@ a:focus {
   font-size: 16px;
   line-height: 1.5em;
   color: var(--basic-red);
-  margin: 42px 0 44.5px 30px;
+  margin: 42px 0 44px 30px;
 }
 .middle-bar-contacts {
   margin-top: 53px;
@@ -804,7 +813,7 @@ a:focus {
 .main-navigation {
   background-color: var(--navigation-background);
   box-shadow: inset 0px -5px 0px #293449;
-  margin-bottom: 59px;
+  margin-bottom: 60px;
 }
 
 .site-navigation-link {
@@ -813,8 +822,9 @@ a:focus {
   line-height: 1.33em;
   display: flex;
   height: 100%;
-  padding: 17px 28px 20px 28px;
+  padding: 17px 28px 19px 28px;
 }
+
 .site-navigation-link:hover:not(.disabled-link-in-navigation),
 .site-navigation-link:focus:not(.disabled-link-in-navigation) {
   background: var(--navigation-btn-hover);
@@ -839,7 +849,7 @@ ul {
   position: relative;
   background-color: var(--basic-black);
 }
-.catalog-list-item:nth-child(1) {
+.catalog-list-item.yellow {
   background-color: var(--catalog-bg-item-yellow);
   background-image: url("../img/icon-1.svg"),
                     url("../img/new-flag.svg");
@@ -847,25 +857,25 @@ ul {
                         top right;
   background-repeat: no-repeat;
 }
-.catalog-list-item:nth-child(2) {
+.catalog-list-item.blue {
   background-color: var(--catalog-bg-item-blue);
   background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
   background-position: top 34px right 31px;
 }
-.catalog-list-item:nth-child(3) {
+.catalog-list-item.lilac {
   background-color: var(--catalog-bg-item-lilac);
   background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
   background-position: top 31px right 31px;
 }
-.catalog-list-item:nth-child(5) {
+.catalog-list-item.green {
   background-color: var(--catalog-bg-item-green);
   background-image: url("../img/icon-4.svg");
   background-repeat: no-repeat;
   background-position: top 26px right 45px;
 }
-.catalog-list-item:nth-child(6) {
+.catalog-list-item.yellow-two {
   background-color: var(--catalog-bg-item-yellow);
   background-image: url("../img/icon-5.svg");
   background-repeat: no-repeat;
@@ -889,7 +899,7 @@ ul {
   color: var(--basic-white);
   font-size: 14px;
   line-height: 1.28em;
-  margin-left: 23px;
+  margin-left: 22px;
   text-align: center;
   padding: 10px 0;
   margin-bottom: 21px;
@@ -975,6 +985,7 @@ ul {
   text-align: center;
   flex-grow: 1;
   margin: 0;
+  cursor: pointer;
 }
 .slider-button-open-catalog:hover,
 .popular-goods-all-link:hover,
@@ -1098,7 +1109,9 @@ ul {
 .popular-goods-item:hover,
 .popular-manufactures-item-link:hover,
 .popular-goods-item:focus,
-.popular-manufactures-item-link:focus {
+.popular-manufactures-item-link:focus,
+.contacts-map-link:hover,
+.contacts-map-link:focus {
   box-sizing: content-box;
   box-shadow: 0px 4px 20px var(--popular-goods-n-manuf-shadow);
 }
@@ -1348,8 +1361,10 @@ ul {
   padding-bottom: 32px;
 }
 .contacts-map-link {
-  margin-bottom: 19px;
+  margin-bottom: 25px;
   align-self: flex-end;
+  display: block;
+  height: 158px;
 }
 .about-company-link,
 .contact-us-link {
@@ -1515,6 +1530,14 @@ ul {
 .breadcrumbs-link {
   color: var(--basic-black);
   font-size: 13px;
+}
+.breadcrumbs-link:hover:not(.disabled-link-in-navigation),
+.breadcrumbs-link:focus:not(.disabled-link-in-navigation) {
+  text-decoration: underline;
+}
+.breadcrumbs-link:active:not(.disabled-link-in-navigation) {
+  opacity: 0.5;
+  text-decoration: none;
 }
 .catalog-main-section {
   background-color: var(--header-background);
@@ -2018,9 +2041,17 @@ ul {
   background: url("../img/radio-off.svg") no-repeat 0 0;
 }
 .name-feedback-input:focus,
+.name-feedback-input:hover,
 .email-feedback-input:focus,
-.textfield-feedback-input:focus {
+.email-feedback-input:hover,
+.textfield-feedback-input:focus,
+.textfield-feedback-input:hover {
   border: 2px solid var(--bookmarks-bg-hover);
+}
+.name-feedback-input:invalid,
+.email-feedback-input:invalid {
+  box-shadow: none;
+  border: 2px solid var(--basic-red);
 }
 /* Animations */
 @keyframes bounce {

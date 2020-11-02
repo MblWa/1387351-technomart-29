@@ -36,9 +36,8 @@
           </svg>
         </a>
         <form class="search-bar" id="search-form" method="get">
-          <label class="search-bar-label" aria-label="Поиск по сайту Техномарт">
-            <input class="search-bar-input" type="search" id="query" name="q" placeholder="Поиск:">
-          </label>
+          <label class="search-bar-label visually-hidden" for="query" aria-label="Поиск по сайту Техномарт"></label>
+          <input class="search-bar-input" type="search" id="query" name="q" placeholder="Поиск:">
           <button class="search-bar-button" aria-label="Кнопка поиска по сайту Техномарт"></button>
         </form>
         <a class="bookmarks-link" href="" aria-label="Раздел личного кабинета с товарами, добавленными в закладки">Закладки: 0</a>
@@ -66,7 +65,7 @@
       </div>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li>
+          <li class="site-navigation-item">
             <a class="site-navigation-link disabled-link-in-navigation" aria-label="Главная страница сайта">Главная</a>
           </li>
           <li>
@@ -97,15 +96,15 @@
       <section class="catalog-and-slider">
         <h2 class="visually-hidden">Каталог и слайдер</h2>
         <ul class="catalog-list">
-          <li class="catalog-list-item">
+          <li class="catalog-list-item yellow">
             <h3 class="catalog-list-item-heading">Материалы</h3>
             <a class="catalog-button" href="" aria-label="Выбрать строительные материалы">НА ЛЮБОЙ ВКУС</a>
           </li>
-          <li class="catalog-list-item">
+          <li class="catalog-list-item blue">
             <h3 class="catalog-list-item-heading">Инструмент</h3>
             <a class="catalog-button" href="" aria-label="Выбрать строительный инструмент для покупки">НА ВСЕ СЛУЧАИ</a>
           </li>
-          <li class="catalog-list-item">
+          <li class="catalog-list-item lilac">
             <h3 class="catalog-list-item-heading">Техника</h3>
             <a class="catalog-button" href="" aria-label="Выбрать строительную технику">ДЛЯ СТРОЙКИ</a>
           </li>
@@ -135,11 +134,11 @@
               <div class="slider-navigation-button-dot second-slide-dot"></div>
             </div>
           </li>
-          <li class="catalog-list-item">
+          <li class="catalog-list-item green">
             <h3 class="catalog-list-item-heading">Скидки 50%</h3>
             <a class="catalog-button" href="" aria-label="Перейти к товарам по скидке">НА 350 ТОВАРОВ</a>
           </li>
-          <li class="catalog-list-item">
+          <li class="catalog-list-item yellow-two">
             <h3 class="catalog-list-item-heading">Доставка</h3>
             <a class="catalog-button" href="" aria-label="Перейти к условиям бесплатной доставки">БЕСПЛАТНО</a>
           </li>
@@ -467,11 +466,11 @@
     <form class="feedback-form" id="feedback-form-id" action="https://echo.htmlacademy.ru" method="post">
       <p class="feedback-text-block">
         <label class="modal-label-heading" for="name-feedback" aria-label="Введите ваше имя">Ваше имя:</label>
-        <input class="name-feedback-input" id="name-feedback" type="text" name="name-feedback" placeholder="Имя Фамилия">
+        <input class="name-feedback-input" id="name-feedback" type="text" name="name-feedback" placeholder="Имя Фамилия" required>
       </p>
       <p class="feedback-text-block">
         <label class="modal-label-heading" for="email-feedback" aria-label="Введите ваш e-mail">Ваш e-mail:</label>
-        <input class="email-feedback-input" id="email-feedback" type="email" name="email-feedback" placeholder="email@example.com">
+        <input class="email-feedback-input" id="email-feedback" type="email" name="email-feedback" placeholder="email@example.com" required>
       </p>
       <p class="feedback-text-block">
         <label class="modal-label-heading" for="textfield-feedback" aria-label="Введите текст письма">Текст письма:</label>
