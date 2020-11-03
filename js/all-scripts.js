@@ -35,9 +35,9 @@ for (var i = 0; i < addedgoodsLink.length; i++) {
 
 
 //map
-const mapLink = document.querySelector(".contacts-map-link");
-const mapPopup = document.querySelector(".modal-map");
-const mapClose = mapPopup.querySelector(".modal-close-button");
+var mapLink = document.querySelector(".contacts-map-link");
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = mapPopup.querySelector(".modal-close-button");
 
 mapLink.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -60,17 +60,17 @@ window.addEventListener("keydown", function (evt) {
 
 //feedback
 
-const feedbackLink = document.querySelector(".contact-us-link");
-const feedbackPopup = document.querySelector(".modal-feedback");
-const feedbackClose = feedbackPopup.querySelector(".modal-close-button");
-const feedbackForm = feedbackPopup.querySelector(".feedback-form");
-const feedbackName = feedbackPopup.querySelector(".name-feedback-input");
-const feedbackEmail = feedbackPopup.querySelector(".email-feedback-input");
-const feedbackText = feedbackPopup.querySelector(".textfield-feedback-input");
+var feedbackLink = document.querySelector(".contact-us-link");
+var feedbackPopup = document.querySelector(".modal-feedback");
+var feedbackClose = feedbackPopup.querySelector(".modal-close-button");
+var feedbackForm = feedbackPopup.querySelector(".feedback-form");
+var feedbackName = feedbackPopup.querySelector(".name-feedback-input");
+var feedbackEmail = feedbackPopup.querySelector(".email-feedback-input");
+var feedbackText = feedbackPopup.querySelector(".textfield-feedback-input");
 
-let isStorageSupport = true;
-let storageName = "";
-let storageEmail = "";
+var isStorageSupport = true;
+var storageName = "";
+var storageEmail = "";
 
 try {
   storageName = localStorage.getItem("name");
@@ -111,7 +111,7 @@ feedbackForm.addEventListener("submit", function (evt) {
       if (!feedbackName.value) {
         feedbackName.classList.add("feedback-input-invalid");
       }
-      if (!feedbackEmail.value && feedbackEmail.checkValidity() == true) {
+      if (!feedbackEmail.value && feedbackEmail.checkValidity() == false) {
         feedbackEmail.classList.add("feedback-input-invalid");
       }
     } else {
@@ -138,7 +138,7 @@ window.addEventListener("keydown", function (evt) {
 
 var sliderMenuButtons = document.getElementsByClassName("services-button"); //создаем коллекцию кнопок слайдера
 var sliderSlides = document.getElementsByClassName("services-slider-item"); //создаем коллекцию слайдов
-var arrayOfButtons = [...sliderMenuButtons]; //конвертируем коллекцию кнопок в массив
+var arrayOfButtons = Array.from(sliderMenuButtons); //конвертируем коллекцию кнопок в массив
 
 for (var i = 0; i < sliderMenuButtons.length; i++) { //вешаем на все кнопки событие
   sliderMenuButtons[i].addEventListener("click", function (evt) { //по клику

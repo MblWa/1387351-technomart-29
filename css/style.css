@@ -2105,6 +2105,7 @@ ul {
 .textfield-feedback-input:hover {
   border: 2px solid var(--bookmarks-bg-hover);
 }
+.email-feedback-input:invalid,
 .feedback-input-invalid {
   box-shadow: none;
   border: 2px solid var(--basic-red);
