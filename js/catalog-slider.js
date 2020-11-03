@@ -7,7 +7,6 @@ sliderNavButtonLeft.disabled = true;
 
 sliderNavButtonLeft.addEventListener("click", function (evt) { //зададим логику левой кнопке при клике
   evt.preventDefault(); //отменяем стандартное действие
-  console.log(currentSlide);
   if (currentSlide - 1 >= 0) {
     sliderCatalogSlides[currentSlide].classList.add("hidden-slide");
     sliderButtonsDots[currentSlide].classList.remove("selected-slide");
@@ -21,7 +20,6 @@ sliderNavButtonLeft.addEventListener("click", function (evt) { //зададим 
 
 sliderNavButtonRight.addEventListener("click", function (evt) { //зададим логику правой кнопке при клике
   evt.preventDefault(); //отменяем стандартное действие
-  console.log(currentSlide + 1);
   if (currentSlide + 1 < sliderCatalogSlides.length) {
     sliderCatalogSlides[currentSlide].classList.add("hidden-slide");
     sliderButtonsDots[currentSlide].classList.remove("selected-slide");
