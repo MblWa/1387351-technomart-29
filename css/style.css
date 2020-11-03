@@ -1596,6 +1596,7 @@ ul {
   cursor: pointer;
   border: 1px solid var(--catalog-filter-show-button-shadow);
   padding: 10px 0 10px 0;
+  text-transform:  uppercase;
 }
 .filter-show-button:hover,
 .filter-show-button:focus {
