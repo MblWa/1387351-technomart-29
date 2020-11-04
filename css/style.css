@@ -849,7 +849,7 @@ a:focus {
 }
 .main-navigation {
   background-color: var(--navigation-background);
-  box-shadow: inset 0px -5px 0px #293449;
+  box-shadow: inset 0px -5px 0px var(--header-bar-background);
   margin-bottom: 60px;
 }
 
@@ -865,12 +865,12 @@ a:focus {
 .site-navigation-link:hover:not(.disabled-link-in-navigation),
 .site-navigation-link:focus:not(.disabled-link-in-navigation) {
   background: var(--navigation-btn-hover);
-  box-shadow: inset 0px -5px 0px #293449;
+  box-shadow: inset 0px -5px 0px var(--header-bar-background);
 }
 .site-navigation-link:active:not(.disabled-link-in-navigation) {
   opacity: 0.5;
   background: var(--navigation-btn-click);
-  box-shadow: inset 0px -5px 0px #293449;
+  box-shadow: inset 0px -5px 0px var(--header-bar-background);
 }
 
 /*main*/
