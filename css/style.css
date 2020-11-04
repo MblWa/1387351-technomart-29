@@ -959,11 +959,11 @@ ul {
 }
 
 .slider-list-item.perforators {
-  background-image: url(../img/slide_1_bg.png);
+  background-image: url(../img/slide-1-bg.png);
   background-repeat: no-repeat;
 }
 .slider-list-item.drills {
-  background-image: url(../img/slide_2_bg.png);
+  background-image: url(../img/slide-2-bg.png);
   background-repeat: no-repeat;
 }
 .slider-list-item.hidden-slide {
